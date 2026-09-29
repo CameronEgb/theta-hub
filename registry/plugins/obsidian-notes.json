@@ -16,8 +16,8 @@
   "releases": {
     "0.1.0": {
       "tag": "v0.1.0",
-      "url": "https://github.com/CameronEgb/Theta-IDE/releases/download/v0.1.0/plugin-obsidian.zip",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
+      "sha256": "48c21bb5df26d2158637856320d3da12943e1e4cccb31105d7b4801775a44167",
       "published_at": "2026-09-29T00:00:00Z"
     }
   }

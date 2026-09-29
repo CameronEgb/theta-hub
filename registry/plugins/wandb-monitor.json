@@ -15,8 +15,8 @@
   "releases": {
     "0.2.1": {
       "tag": "v0.2.1",
-      "url": "https://github.com/nesyrl/theta-plugin-wandb/releases/download/v0.2.1/wandb.zip",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/wandb-0.2.1.zip",
+      "sha256": "18ef286e692c9757221c472bff6a8747cb7548159d3be55c4e1bb66b1346dc83",
       "published_at": "2026-09-25T12:00:00Z"
     }
   }

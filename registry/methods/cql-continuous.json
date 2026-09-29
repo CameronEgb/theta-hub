@@ -15,8 +15,8 @@
   "releases": {
     "1.0.0": {
       "tag": "v1.0.0",
-      "url": "https://github.com/nesyrl/theta-method-cql-cont/releases/download/v1.0.0/cql_continuous.zip",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cql_continuous-1.0.0.zip",
+      "sha256": "cc8da4c62655cdb94ece4d63f84888e12eb17ff0a7723617a72b43e9382d6564",
       "published_at": "2026-09-20T10:00:00Z"
     }
   }

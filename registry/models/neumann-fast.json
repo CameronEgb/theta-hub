@@ -15,8 +15,8 @@
   "releases": {
     "0.3.0": {
       "tag": "v0.3.0",
-      "url": "https://github.com/logicrl/neumann-fast/releases/download/v0.3.0/neumann_fast.zip",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann_fast-0.3.0.zip",
+      "sha256": "179d06547babbc51baae187fe6b4bb72492c181e8a15b9d032208e9dec7a2599",
       "published_at": "2026-09-18T08:00:00Z"
     }
   }

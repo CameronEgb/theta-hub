@@ -7,8 +7,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Build artifacts (compiled dynamically by CI)
-dist/
 
 # Virtual environments
 .venv/

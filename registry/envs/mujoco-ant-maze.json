@@ -15,8 +15,8 @@
   "releases": {
     "0.1.5": {
       "tag": "v0.1.5",
-      "url": "https://github.com/farama/antmaze-wrappers/releases/download/v0.1.5/antmaze.zip",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antmaze-0.1.5.zip",
+      "sha256": "a2f5575a23d7b4a604efe0065975cd34d25d2e33b039995b4cef2501c1b16caf",
       "published_at": "2026-09-15T14:00:00Z"
     }
   }

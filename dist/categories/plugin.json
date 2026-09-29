@@ -1,0 +1,64 @@
+{
+  "kind": "plugin",
+  "updated_at": "2026-09-29T04:39:59.207032+00:00",
+  "count": 2,
+  "components": [
+    {
+      "id": "obsidian-notes",
+      "name": "Obsidian Notes",
+      "kind": "plugin",
+      "version": "0.1.0",
+      "description": "Embedded Obsidian vault browser and research markdown notebook linked to NeSyRL experiment runs.",
+      "author": {
+        "name": "Cameron Egbert",
+        "github": "CameronEgb",
+        "url": "https://github.com/CameronEgb"
+      },
+      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "license": "MIT",
+      "tags": [
+        "notes",
+        "obsidian",
+        "markdown",
+        "research"
+      ],
+      "target_path": "plugins/obsidian",
+      "releases": {
+        "0.1.0": {
+          "tag": "v0.1.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
+          "sha256": "48c21bb5df26d2158637856320d3da12943e1e4cccb31105d7b4801775a44167",
+          "published_at": "2026-09-29T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "wandb-monitor",
+      "name": "Weights & Biases Live Sync",
+      "kind": "plugin",
+      "version": "0.2.1",
+      "description": "Streams real-time training losses, rewards, and evaluation metrics directly to W&B dashboards.",
+      "author": {
+        "name": "NeSyRL Community",
+        "github": "nesyrl"
+      },
+      "repository": "https://github.com/nesyrl/theta-plugin-wandb",
+      "license": "Apache-2.0",
+      "tags": [
+        "wandb",
+        "telemetry",
+        "visualization",
+        "monitoring"
+      ],
+      "target_path": "plugins/wandb",
+      "releases": {
+        "0.2.1": {
+          "tag": "v0.2.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/wandb-0.2.1.zip",
+          "sha256": "18ef286e692c9757221c472bff6a8747cb7548159d3be55c4e1bb66b1346dc83",
+          "published_at": "2026-09-25T12:00:00Z"
+        }
+      }
+    }
+  ]
+}
