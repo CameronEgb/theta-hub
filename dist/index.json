@@ -1,7 +1,7 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-09-29T13:44:40.914540+00:00",
+  "updated_at": "2026-09-29T15:05:27.657439+00:00",
   "count": 7,
   "components": [
     {
@@ -172,7 +172,7 @@
         "0.1.0": {
           "tag": "v0.1.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
-          "sha256": "48c21bb5df26d2158637856320d3da12943e1e4cccb31105d7b4801775a44167",
+          "sha256": "2f0497b9e9370d99b30a30474b891a6dc2a49423057928e54b4ece8beb03b17c",
           "published_at": "2026-09-29T00:00:00Z"
         }
       }
