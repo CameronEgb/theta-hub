@@ -1,8 +1,39 @@
 {
   "kind": "plugin",
-  "updated_at": "2026-09-29T04:39:59.207032+00:00",
-  "count": 2,
+  "updated_at": "2026-09-29T05:47:12.060249+00:00",
+  "count": 3,
   "components": [
+    {
+      "id": "doom-sim",
+      "name": "DOOM Simulator",
+      "kind": "plugin",
+      "version": "0.1.0",
+      "description": "Real-time 3D DOOM raycaster simulator, RL agent testbed, and performance benchmark to answer: Can Theta run DOOM?",
+      "author": {
+        "name": "Cameron Egbert",
+        "github": "CameronEgb",
+        "url": "https://github.com/CameronEgb"
+      },
+      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "license": "MIT",
+      "tags": [
+        "doom",
+        "simulation",
+        "raycaster",
+        "benchmark",
+        "rl",
+        "game"
+      ],
+      "target_path": "plugins/doom",
+      "releases": {
+        "0.1.0": {
+          "tag": "v0.1.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
+          "sha256": "6b15cc11709b18b7eb9b37348a7fef0717a9d8444ed9325c50001360398e607c",
+          "published_at": "2026-09-29T00:00:00Z"
+        }
+      }
+    },
     {
       "id": "obsidian-notes",
       "name": "Obsidian Notes",
