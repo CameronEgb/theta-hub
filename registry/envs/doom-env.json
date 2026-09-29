@@ -1,0 +1,24 @@
+{
+  "id": "doom-env",
+  "name": "DOOM RL Environment",
+  "kind": "env",
+  "version": "1.0.0",
+  "description": "DOOM tactical 2.5D simulation gymnasium environment for reinforcement learning.",
+  "author": {
+    "name": "Cameron Egbert",
+    "github": "CameronEgb",
+    "url": "https://github.com/CameronEgb"
+  },
+  "repository": "https://github.com/CameronEgb/Theta-IDE",
+  "license": "MIT",
+  "tags": ["doom", "rl", "tactical", "gym", "environment"],
+  "target_path": "in/envs/doom",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_env-1.0.0.zip",
+      "sha256": "e21b5d38b92dcc4d6a88b4152a66678365cc1f3a8a7c1dd6bc99e81a0881a3df",
+      "published_at": "2026-09-29T00:00:00Z"
+    }
+  }
+}

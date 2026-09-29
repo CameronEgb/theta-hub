@@ -1,9 +1,9 @@
 {
   "id": "doom-sim",
-  "name": "DOOM Simulator",
+  "name": "DOOM",
   "kind": "plugin",
   "version": "0.1.0",
-  "description": "Real-time 3D DOOM raycaster simulator, RL agent testbed, and performance benchmark to answer: Can Theta run DOOM?",
+  "description": "Authentic 1993 id Software DOOM engine running directly inside Theta IDE, packaged with DOOM RL simulator.",
   "author": {
     "name": "Cameron Egbert",
     "github": "CameronEgb",
@@ -11,13 +11,13 @@
   },
   "repository": "https://github.com/CameronEgb/Theta-IDE",
   "license": "MIT",
-  "tags": ["doom", "simulation", "raycaster", "benchmark", "rl", "game"],
+  "tags": ["doom", "game", "fps", "classic", "rl"],
   "target_path": "plugins/doom",
   "releases": {
     "0.1.0": {
       "tag": "v0.1.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
-      "sha256": "6b15cc11709b18b7eb9b37348a7fef0717a9d8444ed9325c50001360398e607c",
+      "sha256": "b606fccab30377effc8953e13372fd9e5d82a4bac1ee1ddc0676db702381c08d",
       "published_at": "2026-09-29T00:00:00Z"
     }
   }
