@@ -1,0 +1,23 @@
+{
+  "id": "neumann-fast",
+  "name": "Neumann Fast Reasoner",
+  "kind": "model",
+  "version": "0.3.0",
+  "description": "High-throughput vector-matrix NeSy symbolic logic forward reasoner for hybrid RL policies.",
+  "author": {
+    "name": "LogicRL Contributors",
+    "github": "logicrl"
+  },
+  "repository": "https://github.com/logicrl/neumann-fast",
+  "license": "Apache-2.0",
+  "tags": ["logic", "symbolic", "neumann", "hybrid"],
+  "target_path": "src/usr/models/neumann_fast",
+  "releases": {
+    "0.3.0": {
+      "tag": "v0.3.0",
+      "url": "https://github.com/logicrl/neumann-fast/releases/download/v0.3.0/neumann_fast.zip",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_at": "2026-09-18T08:00:00Z"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hub.thetaide.org/schemas/component-v1.json",
+  "title": "ThetaComponentManifest",
+  "description": "Schema for a component published on the Theta Community Hub.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "kind",
+    "version",
+    "description",
+    "author",
+    "repository",
+    "releases"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-_]{1,63}$",
+      "description": "Unique URL-safe identifier (e.g. 'obsidian-notes' or 'cql-continuous')."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 60,
+      "description": "Human-readable display name."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["plugin", "method", "model", "env", "experiment"],
+      "description": "Component category."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[0-9A-Za-z.-]+)?$",
+      "description": "Current semantic version string (e.g. '1.0.0')."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 250,
+      "description": "Clear summary of the component's functionality."
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "github": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri",
+      "description": "Public source repository URL."
+    },
+    "license": {
+      "type": "string",
+      "default": "MIT"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "target_path": {
+      "type": "string",
+      "description": "Relative target directory inside the IDE or workspace."
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "thetaide": { "type": "string" },
+        "python": { "type": "string" }
+      }
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon identifier or relative SVG path."
+    },
+    "releases": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["tag", "url"],
+        "properties": {
+          "tag": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "sha256": {
+            "type": "string",
+            "pattern": "^([a-fA-F0-9]{64})?$",
+            "description": "SHA-256 hash of the release archive."
+          },
+          "published_at": { "type": "string" },
+          "size_bytes": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

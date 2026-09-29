@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Build artifacts (compiled dynamically by CI)
+dist/
+
+# Virtual environments
+.venv/
+env/
+venv/

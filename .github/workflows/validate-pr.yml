@@ -1,0 +1,29 @@
+name: Validate Component Manifests
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'registry/**'
+      - 'schemas/**'
+      - 'scripts/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate Manifests
+        run: |
+          python scripts/validate_manifest.py
+
+      - name: Test Index Compilation
+        run: |
+          python scripts/build_index.py

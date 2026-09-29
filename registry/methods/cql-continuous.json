@@ -1,0 +1,23 @@
+{
+  "id": "cql-continuous",
+  "name": "Conservative Q-Learning (Continuous)",
+  "kind": "method",
+  "version": "1.0.0",
+  "description": "Offline continuous-action CQL algorithm with automated Lagrange multiplier tuning for out-of-distribution state penalties.",
+  "author": {
+    "name": "NeSyRL Lab",
+    "github": "nesyrl"
+  },
+  "repository": "https://github.com/nesyrl/theta-method-cql-cont",
+  "license": "MIT",
+  "tags": ["offline-rl", "cql", "continuous", "actor-critic"],
+  "target_path": "src/usr/methods/cql_continuous",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://github.com/nesyrl/theta-method-cql-cont/releases/download/v1.0.0/cql_continuous.zip",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_at": "2026-09-20T10:00:00Z"
+    }
+  }
+}
