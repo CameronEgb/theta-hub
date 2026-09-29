@@ -1,8 +1,8 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-09-29T15:05:27.657439+00:00",
-  "count": 7,
+  "updated_at": "2026-09-29T18:07:55.283597+00:00",
+  "count": 8,
   "components": [
     {
       "id": "doom-env",
@@ -115,6 +115,35 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann_fast-0.3.0.zip",
           "sha256": "179d06547babbc51baae187fe6b4bb72492c181e8a15b9d032208e9dec7a2599",
           "published_at": "2026-09-18T08:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity Agent",
+      "kind": "plugin",
+      "version": "0.1.0",
+      "description": "Integrated Google Antigravity Agent for pair programming and codebase assistance.",
+      "author": {
+        "name": "Antigravity Team",
+        "github": "google-antigravity",
+        "url": "https://antigravity.google/"
+      },
+      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "license": "MIT",
+      "tags": [
+        "ai",
+        "agent",
+        "assistant",
+        "antigravity"
+      ],
+      "target_path": "plugins/antigravity",
+      "releases": {
+        "0.1.0": {
+          "tag": "v0.1.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.0.zip",
+          "sha256": "19fdfa859e6b831123a0ccec355208fd90eb449296aea8cefaf644637af654d8",
+          "published_at": "2026-09-29T00:00:00Z"
         }
       }
     },
