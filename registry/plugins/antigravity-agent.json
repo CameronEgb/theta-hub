@@ -9,7 +9,7 @@
     "github": "google-antigravity",
     "url": "https://antigravity.google/"
   },
-  "repository": "https://github.com/CameronEgb/Theta-IDE",
+  "repository": "https://github.com/CameronEgb/theta-plugins",
   "license": "MIT",
   "tags": ["ai", "agent", "assistant", "antigravity"],
   "target_path": "plugins/antigravity",

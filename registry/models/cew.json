@@ -1,0 +1,29 @@
+{
+  "id": "cew",
+  "name": "Clinical Expert Weighting (CEW)",
+  "kind": "model",
+  "version": "1.0.0",
+  "description": "Self-organizing neuro-fuzzy Q-function with CLIP, ECM clustering, and Wang-Mendel rule generation.",
+  "author": {
+    "name": "NeSyRL Contributors",
+    "github": "CameronEgb"
+  },
+  "repository": "https://github.com/CameronEgb/Offline-BlendRL",
+  "license": "MIT",
+  "tags": [
+    "fuzzy",
+    "neuro-symbolic",
+    "offline-rl",
+    "interpretability",
+    "cew"
+  ],
+  "target_path": "src/usr/models/cew",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cew-1.0.0.zip",
+      "sha256": "3db5d37219a88e614ff52a8a6cbd5bcee4fa956462311f5325ca6d4e43397043",
+      "published_at": "2026-10-04T00:00:00Z"
+    }
+  }
+}

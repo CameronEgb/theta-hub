@@ -9,7 +9,7 @@
     "github": "CameronEgb",
     "url": "https://github.com/CameronEgb"
   },
-  "repository": "https://github.com/CameronEgb/Theta-IDE",
+  "repository": "https://github.com/CameronEgb/theta-plugins",
   "license": "MIT",
   "tags": ["doom", "game", "fps", "classic", "rl"],
   "target_path": "plugins/doom",

@@ -1,8 +1,8 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-09-29T18:59:44.325337+00:00",
-  "count": 8,
+  "updated_at": "2026-10-05T13:54:41.200492+00:00",
+  "count": 10,
   "components": [
     {
       "id": "doom-env",
@@ -15,7 +15,7 @@
         "github": "CameronEgb",
         "url": "https://github.com/CameronEgb"
       },
-      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "repository": "https://github.com/CameronEgb/theta-plugins",
       "license": "MIT",
       "tags": [
         "doom",
@@ -91,6 +91,65 @@
       }
     },
     {
+      "id": "blendrl",
+      "name": "BlendRL Neural-Symbolic Policy",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Modular actor-critic architecture combining neural networks and symbolic reasoners with adaptive blending.",
+      "author": {
+        "name": "NeSyRL Contributors",
+        "github": "CameronEgb"
+      },
+      "repository": "https://github.com/CameronEgb/Offline-BlendRL",
+      "license": "MIT",
+      "tags": [
+        "blendrl",
+        "hybrid",
+        "neural-symbolic",
+        "nsfr",
+        "logic",
+        "rl"
+      ],
+      "target_path": "src/usr/models/blendrl",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
+          "sha256": "9663d583392ba7d64f6721a610a3fbeb467e5604fc209c683a73c41888163164",
+          "published_at": "2026-10-04T00:00:00Z"
+        }
+      }
+    },
+    {
+      "id": "cew",
+      "name": "Clinical Expert Weighting (CEW)",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Self-organizing neuro-fuzzy Q-function with CLIP, ECM clustering, and Wang-Mendel rule generation.",
+      "author": {
+        "name": "NeSyRL Contributors",
+        "github": "CameronEgb"
+      },
+      "repository": "https://github.com/CameronEgb/Offline-BlendRL",
+      "license": "MIT",
+      "tags": [
+        "fuzzy",
+        "neuro-symbolic",
+        "offline-rl",
+        "interpretability",
+        "cew"
+      ],
+      "target_path": "src/usr/models/cew",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cew-1.0.0.zip",
+          "sha256": "3db5d37219a88e614ff52a8a6cbd5bcee4fa956462311f5325ca6d4e43397043",
+          "published_at": "2026-10-04T00:00:00Z"
+        }
+      }
+    },
+    {
       "id": "neumann-fast",
       "name": "Neumann Fast Reasoner",
       "kind": "model",
@@ -129,7 +188,7 @@
         "github": "google-antigravity",
         "url": "https://antigravity.google/"
       },
-      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "repository": "https://github.com/CameronEgb/theta-plugins",
       "license": "MIT",
       "tags": [
         "ai",
@@ -182,7 +241,7 @@
         "github": "CameronEgb",
         "url": "https://github.com/CameronEgb"
       },
-      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "repository": "https://github.com/CameronEgb/theta-plugins",
       "license": "MIT",
       "tags": [
         "doom",
@@ -212,7 +271,7 @@
         "github": "CameronEgb",
         "url": "https://github.com/CameronEgb"
       },
-      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "repository": "https://github.com/CameronEgb/theta-plugins",
       "license": "MIT",
       "tags": [
         "notes",
