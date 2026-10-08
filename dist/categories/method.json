@@ -1,33 +1,42 @@
 {
   "kind": "method",
-  "updated_at": "2026-10-05T14:15:42.589733+00:00",
+  "updated_at": "2026-10-08T02:14:42.906536+00:00",
   "count": 1,
   "components": [
     {
-      "id": "cql-continuous",
-      "name": "Conservative Q-Learning (Continuous)",
+      "id": "sb3-suite",
+      "name": "Stable-Baselines3 Suite",
       "kind": "method",
       "version": "1.0.0",
-      "description": "Offline continuous-action CQL algorithm with automated Lagrange multiplier tuning for out-of-distribution state penalties.",
+      "description": "Standard reinforcement learning algorithms (PPO, DQN, A2C, SAC) powered by Stable-Baselines3.",
       "author": {
-        "name": "NeSyRL Lab",
-        "github": "nesyrl"
+        "name": "DLR-RM & SB3 Contributors",
+        "github": "DLR-RM",
+        "url": "https://github.com/DLR-RM/stable-baselines3"
       },
-      "repository": "https://github.com/nesyrl/theta-method-cql-cont",
+      "repository": "https://github.com/DLR-RM/stable-baselines3",
       "license": "MIT",
       "tags": [
-        "offline-rl",
-        "cql",
-        "continuous",
-        "actor-critic"
+        "rl",
+        "baselines",
+        "ppo",
+        "dqn",
+        "sb3"
       ],
-      "target_path": "src/usr/methods/cql_continuous",
+      "target_path": "src/usr/methods/sb3",
+      "dependencies": {
+        "pip": [
+          "stable-baselines3",
+          "gymnasium",
+          "shimmy"
+        ]
+      },
       "releases": {
         "1.0.0": {
           "tag": "v1.0.0",
-          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cql_continuous-1.0.0.zip",
-          "sha256": "cc8da4c62655cdb94ece4d63f84888e12eb17ff0a7723617a72b43e9382d6564",
-          "published_at": "2026-09-20T10:00:00Z"
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.0.zip",
+          "sha256": "71fce1003367afe2ea8eba6dc4c0308369c5c81ad13c20d64b1deaef098e10fd",
+          "published_at": "2026-10-07T21:00:00Z"
         }
       }
     }

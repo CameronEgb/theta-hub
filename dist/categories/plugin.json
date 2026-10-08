@@ -1,7 +1,7 @@
 {
   "kind": "plugin",
-  "updated_at": "2026-10-05T14:15:42.589733+00:00",
-  "count": 4,
+  "updated_at": "2026-10-08T02:14:42.906536+00:00",
+  "count": 3,
   "components": [
     {
       "id": "antigravity",
@@ -112,34 +112,6 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
           "sha256": "52ffa795170a3835aa621ba379e5dc680600c7a4c822a49e9cc411986c180f61",
           "published_at": "2026-09-29T00:00:00Z"
-        }
-      }
-    },
-    {
-      "id": "wandb-monitor",
-      "name": "Weights & Biases Live Sync",
-      "kind": "plugin",
-      "version": "0.2.1",
-      "description": "Streams real-time training losses, rewards, and evaluation metrics directly to W&B dashboards.",
-      "author": {
-        "name": "NeSyRL Community",
-        "github": "nesyrl"
-      },
-      "repository": "https://github.com/nesyrl/theta-plugin-wandb",
-      "license": "Apache-2.0",
-      "tags": [
-        "wandb",
-        "telemetry",
-        "visualization",
-        "monitoring"
-      ],
-      "target_path": "plugins/wandb",
-      "releases": {
-        "0.2.1": {
-          "tag": "v0.2.1",
-          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/wandb-0.2.1.zip",
-          "sha256": "18ef286e692c9757221c472bff6a8747cb7548159d3be55c4e1bb66b1346dc83",
-          "published_at": "2026-09-25T12:00:00Z"
         }
       }
     }

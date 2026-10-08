@@ -1,7 +1,7 @@
 {
   "kind": "model",
-  "updated_at": "2026-10-05T14:15:42.589733+00:00",
-  "count": 3,
+  "updated_at": "2026-10-08T02:14:42.906536+00:00",
+  "count": 2,
   "components": [
     {
       "id": "blendrl",
@@ -59,34 +59,6 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cew-1.0.0.zip",
           "sha256": "3db5d37219a88e614ff52a8a6cbd5bcee4fa956462311f5325ca6d4e43397043",
           "published_at": "2026-10-04T00:00:00Z"
-        }
-      }
-    },
-    {
-      "id": "neumann-fast",
-      "name": "Neumann Fast Reasoner",
-      "kind": "model",
-      "version": "0.3.0",
-      "description": "High-throughput vector-matrix NeSy symbolic logic forward reasoner for hybrid RL policies.",
-      "author": {
-        "name": "LogicRL Contributors",
-        "github": "logicrl"
-      },
-      "repository": "https://github.com/logicrl/neumann-fast",
-      "license": "Apache-2.0",
-      "tags": [
-        "logic",
-        "symbolic",
-        "neumann",
-        "hybrid"
-      ],
-      "target_path": "src/usr/models/neumann_fast",
-      "releases": {
-        "0.3.0": {
-          "tag": "v0.3.0",
-          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann_fast-0.3.0.zip",
-          "sha256": "179d06547babbc51baae187fe6b4bb72492c181e8a15b9d032208e9dec7a2599",
-          "published_at": "2026-09-18T08:00:00Z"
         }
       }
     }
