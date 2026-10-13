@@ -1,7 +1,7 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-10-08T02:14:42.906536+00:00",
+  "updated_at": "2026-10-12T22:48:22.148281+00:00",
   "count": 8,
   "components": [
     {
@@ -169,7 +169,7 @@
       "id": "antigravity",
       "name": "Antigravity Agent",
       "kind": "plugin",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "description": "Integrated Google Antigravity Agent for pair programming and codebase assistance.",
       "author": {
         "name": "Antigravity Team",
@@ -186,6 +186,12 @@
       ],
       "target_path": "plugins/antigravity",
       "releases": {
+        "0.1.5": {
+          "tag": "v0.1.5",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.5.zip",
+          "sha256": "dadf64894a0312e59c49c180f06b0fb1ca865cf70db08e665f8db1c00732bc12",
+          "published_at": "2026-10-12T00:00:00Z"
+        },
         "0.1.4": {
           "tag": "v0.1.4",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.4.zip",
