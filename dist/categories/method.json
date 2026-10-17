@@ -1,8 +1,46 @@
 {
   "kind": "method",
-  "updated_at": "2026-10-12T22:48:22.148281+00:00",
-  "count": 1,
+  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "count": 2,
   "components": [
+    {
+      "id": "d3rlpy-suite",
+      "name": "d3rlpy Offline RL Suite",
+      "kind": "method",
+      "version": "1.0.0",
+      "description": "Standard offline reinforcement learning algorithms (CQL, IQL, TD3+BC, BC) powered by d3rlpy.",
+      "author": {
+        "name": "Takuma Seno & d3rlpy Contributors",
+        "github": "takuseno",
+        "url": "https://github.com/takuseno/d3rlpy"
+      },
+      "repository": "https://github.com/takuseno/d3rlpy",
+      "license": "MIT",
+      "tags": [
+        "offline-rl",
+        "cql",
+        "iql",
+        "td3-bc",
+        "bc",
+        "d3rlpy",
+        "baselines"
+      ],
+      "target_path": "src/usr/methods/d3rlpy",
+      "dependencies": {
+        "pip": [
+          "d3rlpy",
+          "gymnasium"
+        ]
+      },
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/d3rlpy_suite-1.0.0.zip",
+          "sha256": "39e8b82929006eaf938bda1ed7d3f66bbc9e8c83dd9af603f82dfb8be5404619",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      }
+    },
     {
       "id": "sb3-suite",
       "name": "Stable-Baselines3 Suite",
@@ -35,8 +73,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.0.zip",
-          "sha256": "71fce1003367afe2ea8eba6dc4c0308369c5c81ad13c20d64b1deaef098e10fd",
-          "published_at": "2026-10-07T21:00:00Z"
+          "sha256": "daf4bc142c52fb7127fb6168980e9798c7c128342e03bddfc113994531055b07",
+          "published_at": "2026-10-16T19:00:00Z"
         }
       }
     }

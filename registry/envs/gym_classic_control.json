@@ -1,0 +1,24 @@
+{
+  "id": "gym_classic_control",
+  "name": "Gymnasium Classic Control",
+  "kind": "env",
+  "version": "1.0.0",
+  "description": "Standard Gymnasium classic control environments: CartPole, MountainCar, Pendulum, and Acrobot.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "tags": [
+    "env",
+    "gym_classic_control"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.0.zip",
+      "sha256": "c5ab0499e49ddef6ea8067c4691a814a11fa7d0527253b0c50da4fbce7291bf6",
+      "published_at": "2026-10-16T19:00:00Z"
+    }
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT"
+}

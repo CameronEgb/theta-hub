@@ -2,7 +2,7 @@
   "id": "obsidian-notes",
   "name": "Obsidian Notes",
   "kind": "plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Embedded Obsidian vault browser and research markdown notebook linked to NeSyRL experiment runs.",
   "author": {
     "name": "Cameron Egbert",
@@ -11,7 +11,12 @@
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
   "license": "MIT",
-  "tags": ["notes", "obsidian", "markdown", "research"],
+  "tags": [
+    "notes",
+    "obsidian",
+    "markdown",
+    "research"
+  ],
   "target_path": "plugins/obsidian",
   "releases": {
     "0.1.0": {
@@ -19,6 +24,12 @@
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
       "sha256": "52ffa795170a3835aa621ba379e5dc680600c7a4c822a49e9cc411986c180f61",
       "published_at": "2026-09-29T00:00:00Z"
+    },
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
+      "sha256": "52ffa795170a3835aa621ba379e5dc680600c7a4c822a49e9cc411986c180f61",
+      "published_at": "2026-10-16T19:00:00Z"
     }
   }
 }

@@ -28,7 +28,7 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["plugin", "method", "model", "env", "experiment"],
+      "enum": ["plugin", "method", "model", "env", "experiment", "suite", "package"],
       "description": "Component category."
     },
     "version": {

@@ -1,0 +1,24 @@
+{
+  "id": "dnn",
+  "name": "Deep Neural Network (MLP)",
+  "kind": "model",
+  "version": "1.0.0",
+  "description": "Standard Multi-Layer Perceptron (DNN) wrapping PyTorch Linear, LayerNorm, and Dueling Q-value heads.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "tags": [
+    "model",
+    "dnn"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dnn-1.0.0.zip",
+      "sha256": "f7043cf9b697b347466840e1d5d37678b419f292993000832d77e81cf32b8dd2",
+      "published_at": "2026-10-16T19:00:00Z"
+    }
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT"
+}

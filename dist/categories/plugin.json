@@ -1,13 +1,13 @@
 {
   "kind": "plugin",
-  "updated_at": "2026-10-12T22:48:22.148281+00:00",
+  "updated_at": "2026-10-16T23:43:52.411631+00:00",
   "count": 3,
   "components": [
     {
       "id": "antigravity",
       "name": "Antigravity Agent",
       "kind": "plugin",
-      "version": "0.1.5",
+      "version": "1.0.0",
       "description": "Integrated Google Antigravity Agent for pair programming and codebase assistance.",
       "author": {
         "name": "Antigravity Team",
@@ -59,6 +59,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.0.zip",
           "sha256": "19fdfa859e6b831123a0ccec355208fd90eb449296aea8cefaf644637af654d8",
           "published_at": "2026-09-29T00:00:00Z"
+        },
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.5.zip",
+          "sha256": "dadf64894a0312e59c49c180f06b0fb1ca865cf70db08e665f8db1c00732bc12",
+          "published_at": "2026-10-16T19:00:00Z"
         }
       }
     },
@@ -66,7 +72,7 @@
       "id": "doom-sim",
       "name": "DOOM",
       "kind": "plugin",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "description": "Authentic 1993 id Software DOOM engine running directly inside Theta IDE, packaged with DOOM RL simulator.",
       "author": {
         "name": "Cameron Egbert",
@@ -89,6 +95,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
           "sha256": "2a4f1fc0605a5d9dfa27590f69a650366f76a7fb4874ee3ac2640771e5614ec3",
           "published_at": "2026-09-29T00:00:00Z"
+        },
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
+          "sha256": "2a4f1fc0605a5d9dfa27590f69a650366f76a7fb4874ee3ac2640771e5614ec3",
+          "published_at": "2026-10-16T19:00:00Z"
         }
       }
     },
@@ -96,7 +108,7 @@
       "id": "obsidian-notes",
       "name": "Obsidian Notes",
       "kind": "plugin",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "description": "Embedded Obsidian vault browser and research markdown notebook linked to NeSyRL experiment runs.",
       "author": {
         "name": "Cameron Egbert",
@@ -118,6 +130,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
           "sha256": "52ffa795170a3835aa621ba379e5dc680600c7a4c822a49e9cc411986c180f61",
           "published_at": "2026-09-29T00:00:00Z"
+        },
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/obsidian-0.1.0.zip",
+          "sha256": "52ffa795170a3835aa621ba379e5dc680600c7a4c822a49e9cc411986c180f61",
+          "published_at": "2026-10-16T19:00:00Z"
         }
       }
     }

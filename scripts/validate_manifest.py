@@ -7,7 +7,7 @@ import re
 import sys
 import urllib.request
 
-VALID_KINDS = {"plugin", "method", "model", "env", "experiment"}
+VALID_KINDS = {"plugin", "method", "model", "env", "experiment", "suite", "package"}
 SEMVER_REGEX = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$")
 ID_REGEX = re.compile(r"^[a-z0-9][a-z0-9-_]{1,63}$")
 

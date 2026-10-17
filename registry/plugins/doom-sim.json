@@ -2,7 +2,7 @@
   "id": "doom-sim",
   "name": "DOOM",
   "kind": "plugin",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Authentic 1993 id Software DOOM engine running directly inside Theta IDE, packaged with DOOM RL simulator.",
   "author": {
     "name": "Cameron Egbert",
@@ -11,7 +11,13 @@
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
   "license": "MIT",
-  "tags": ["doom", "game", "fps", "classic", "rl"],
+  "tags": [
+    "doom",
+    "game",
+    "fps",
+    "classic",
+    "rl"
+  ],
   "target_path": "plugins/doom",
   "releases": {
     "0.1.0": {
@@ -19,6 +25,12 @@
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
       "sha256": "2a4f1fc0605a5d9dfa27590f69a650366f76a7fb4874ee3ac2640771e5614ec3",
       "published_at": "2026-09-29T00:00:00Z"
+    },
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_sim-0.1.0.zip",
+      "sha256": "2a4f1fc0605a5d9dfa27590f69a650366f76a7fb4874ee3ac2640771e5614ec3",
+      "published_at": "2026-10-16T19:00:00Z"
     }
   }
 }

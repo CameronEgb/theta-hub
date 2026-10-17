@@ -30,8 +30,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.0.zip",
-      "sha256": "71fce1003367afe2ea8eba6dc4c0308369c5c81ad13c20d64b1deaef098e10fd",
-      "published_at": "2026-10-07T21:00:00Z"
+      "sha256": "daf4bc142c52fb7127fb6168980e9798c7c128342e03bddfc113994531055b07",
+      "published_at": "2026-10-16T19:00:00Z"
     }
   }
 }

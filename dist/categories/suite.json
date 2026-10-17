@@ -1,0 +1,55 @@
+{
+  "kind": "suite",
+  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "count": 2,
+  "components": [
+    {
+      "id": "basic_suite",
+      "name": "Basic Benchmark Suite",
+      "kind": "suite",
+      "version": "1.0.0",
+      "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, and standard deep neural network architectures.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "tags": [
+        "suite",
+        "basic_suite"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/basic_suite-1.0.0.zip",
+          "sha256": "20096a99892043cdea929bba3d677a21064555ecf024093070969e42cb1ba19a",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT"
+    },
+    {
+      "id": "standard_rl_suite",
+      "name": "Standard RL Suite",
+      "kind": "suite",
+      "version": "1.0.0",
+      "description": "Complete reinforcement learning stack for Theta-IDE: DNN, NatureCNN, and Dueling ResNet models; Online and Offline baselines; and Gymnasium Classic Control environments.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "tags": [
+        "suite",
+        "standard_rl_suite"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/standard_rl_suite-1.0.0.zip",
+          "sha256": "8977188bdf4797013d45b3ca82e1f3afaaaf206b1485c0721d9337a52367e9d6",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT"
+    }
+  ]
+}
