@@ -15,7 +15,7 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dnn-1.0.0.zip",
-      "sha256": "f7043cf9b697b347466840e1d5d37678b419f292993000832d77e81cf32b8dd2",
+      "sha256": "ecdabc0d172b021f5e6097fd19d876951a9c260967bc7d66a660e4eee97c520e",
       "published_at": "2026-10-16T19:00:00Z"
     }
   },
@@ -25,5 +25,9 @@
     "online_rl",
     "offline_rl",
     "supervised"
+  ],
+  "config_path": "in/config/model/basics/dnn.yaml",
+  "config_paths": [
+    "in/config/model/basics/dnn.yaml"
   ]
 }

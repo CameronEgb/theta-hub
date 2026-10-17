@@ -23,8 +23,16 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
-      "sha256": "9663d583392ba7d64f6721a610a3fbeb467e5604fc209c683a73c41888163164",
-      "published_at": "2026-10-04T00:00:00Z"
+      "sha256": "3ad2c188536c353496d866bfca2ca99f88f071acd7121edec5c1dab666ce611d",
+      "published_at": "2026-10-16T19:00:00Z"
     }
-  }
+  },
+  "config_path": "in/config/model/blendrl.yaml",
+  "config_paths": [
+    "in/config/model/blendrl.yaml"
+  ],
+  "paradigms": [
+    "online_rl",
+    "offline_rl"
+  ]
 }

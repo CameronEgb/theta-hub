@@ -30,5 +30,6 @@
     "online_rl",
     "offline_rl",
     "supervised"
-  ]
+  ],
+  "config_path": "in/config/model/cew.yaml"
 }

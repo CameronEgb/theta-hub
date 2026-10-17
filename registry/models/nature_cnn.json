@@ -15,7 +15,7 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nature_cnn-1.0.0.zip",
-      "sha256": "515eda3576d8dfb71e92ab0794fae61dad5416251063cfa46084e0d4e8e9b58e",
+      "sha256": "ef97a92e190950a090ee25b83385eda9df5529793206485780012b7b8ca48ec3",
       "published_at": "2026-10-16T19:00:00Z"
     }
   },
@@ -25,5 +25,9 @@
     "online_rl",
     "offline_rl",
     "supervised"
+  ],
+  "config_path": "in/config/model/basics/nature_cnn.yaml",
+  "config_paths": [
+    "in/config/model/basics/nature_cnn.yaml"
   ]
 }

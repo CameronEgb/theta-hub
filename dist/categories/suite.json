@@ -1,11 +1,11 @@
 {
   "kind": "suite",
-  "updated_at": "2026-10-17T00:41:14.857624+00:00",
+  "updated_at": "2026-10-17T03:23:27.912876+00:00",
   "count": 2,
   "components": [
     {
       "id": "basic_suite",
-      "name": "Basic Benchmark Suite",
+      "name": "ThetaIDE Basics",
       "kind": "suite",
       "version": "1.0.0",
       "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, and standard deep neural network architectures.",
@@ -20,7 +20,7 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/basic_suite-1.0.0.zip",
-          "sha256": "20096a99892043cdea929bba3d677a21064555ecf024093070969e42cb1ba19a",
+          "sha256": "b3f6a57d2c1bcce32b0fc220f42e16572183f118b8ab605b4cb321278f3e4f48",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
@@ -33,29 +33,35 @@
       ]
     },
     {
-      "id": "standard_rl_suite",
-      "name": "Standard RL Suite",
+      "id": "dl_basics_suite",
+      "name": "Deep Learning Basics Suite",
       "kind": "suite",
       "version": "1.0.0",
-      "description": "Complete reinforcement learning stack for Theta-IDE: DNN, NatureCNN, and Dueling ResNet models; Online and Offline baselines; and Gymnasium Classic Control environments.",
+      "description": "Foundational deep learning architectures for Theta-IDE: Multi-Layer Perceptrons (MLP), Transformers, LSTMs, and Dense/Sequence Autoencoders.",
       "author": {
         "name": "Theta-IDE Team"
       },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
       "tags": [
         "suite",
-        "standard_rl_suite"
+        "deep_learning",
+        "mlp",
+        "transformer",
+        "lstm",
+        "autoencoder"
       ],
       "releases": {
         "1.0.0": {
           "tag": "v1.0.0",
-          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/standard_rl_suite-1.0.0.zip",
-          "sha256": "8977188bdf4797013d45b3ca82e1f3afaaaf206b1485c0721d9337a52367e9d6",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dl_basics_suite-1.0.0.zip",
+          "sha256": "39e0d67f3268ccee11d36d8777177f146e68709ed1d8046832cf3d7e0e90a804",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
-      "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT",
       "paradigms": [
+        "supervised",
+        "unsupervised",
         "online_rl",
         "offline_rl"
       ]

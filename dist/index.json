@@ -1,8 +1,8 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-10-17T00:41:14.857624+00:00",
-  "count": 15,
+  "updated_at": "2026-10-17T03:23:27.912876+00:00",
+  "count": 22,
   "components": [
     {
       "id": "atari-env",
@@ -100,6 +100,52 @@
       "license": "MIT",
       "paradigms": [
         "online_rl"
+      ],
+      "config_path": "in/config/env/gym_classic_control/cartpole.yaml",
+      "config_paths": [
+        "in/config/env/gym_classic_control/cartpole.yaml",
+        "in/config/env/gym_classic_control/mountaincar.yaml",
+        "in/config/env/gym_classic_control/pendulum.yaml",
+        "in/config/env/gym_classic_control/acrobot.yaml"
+      ]
+    },
+    {
+      "id": "mnist",
+      "name": "MNIST Handwritten Digits",
+      "kind": "env",
+      "version": "1.0.0",
+      "description": "Handwritten digits classification benchmark (8x8 mini-MNIST and 28x28 MNIST) supporting supervised, unsupervised, and RL environments.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "env",
+        "mnist",
+        "digits",
+        "vision",
+        "classification",
+        "benchmark"
+      ],
+      "target_path": "in/envs/mnist",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mnist-1.0.0.zip",
+          "sha256": "7f1542cbeb24bc9a06781c5f119ce7c7234a1d935b9add0a8982b1e86524ccc9",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "supervised",
+        "unsupervised",
+        "online_rl"
+      ],
+      "config_path": "in/config/env/mnist.yaml",
+      "config_paths": [
+        "in/config/env/mnist.yaml",
+        "in/config/env/digits.yaml"
       ]
     },
     {
@@ -184,6 +230,43 @@
       ]
     },
     {
+      "id": "autoencoder",
+      "name": "Dense & Sequence Autoencoders",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Dense and sequence autoencoder architectures for unsupervised representation learning.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "autoencoder",
+        "unsupervised",
+        "representation",
+        "latent"
+      ],
+      "target_path": "src/usr/models/autoencoder",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/autoencoder-1.0.0.zip",
+          "sha256": "247c53d82402eb8ab7b8e48decf0abba019195d001cc43dd7a493bb0bcc2223f",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "unsupervised",
+        "supervised"
+      ],
+      "config_path": "in/config/model/basics/autoencoder.yaml",
+      "config_paths": [
+        "in/config/model/basics/autoencoder.yaml",
+        "in/config/model/basics/dense_autoencoder.yaml"
+      ]
+    },
+    {
       "id": "blendrl",
       "name": "BlendRL Neural-Symbolic Policy",
       "kind": "model",
@@ -208,10 +291,18 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
-          "sha256": "9663d583392ba7d64f6721a610a3fbeb467e5604fc209c683a73c41888163164",
-          "published_at": "2026-10-04T00:00:00Z"
+          "sha256": "3ad2c188536c353496d866bfca2ca99f88f071acd7121edec5c1dab666ce611d",
+          "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "config_path": "in/config/model/blendrl.yaml",
+      "config_paths": [
+        "in/config/model/blendrl.yaml"
+      ],
+      "paradigms": [
+        "online_rl",
+        "offline_rl"
+      ]
     },
     {
       "id": "cew",
@@ -245,7 +336,8 @@
         "online_rl",
         "offline_rl",
         "supervised"
-      ]
+      ],
+      "config_path": "in/config/model/cew.yaml"
     },
     {
       "id": "dnn",
@@ -264,7 +356,7 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dnn-1.0.0.zip",
-          "sha256": "f7043cf9b697b347466840e1d5d37678b419f292993000832d77e81cf32b8dd2",
+          "sha256": "ecdabc0d172b021f5e6097fd19d876951a9c260967bc7d66a660e4eee97c520e",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
@@ -274,6 +366,10 @@
         "online_rl",
         "offline_rl",
         "supervised"
+      ],
+      "config_path": "in/config/model/basics/dnn.yaml",
+      "config_paths": [
+        "in/config/model/basics/dnn.yaml"
       ]
     },
     {
@@ -293,7 +389,7 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dueling_resnet-1.0.0.zip",
-          "sha256": "cb9ac3549de97574200953d95ca44ffdc496852041f4740ce951fe34840f40d1",
+          "sha256": "5f70fbbfab25e535e1003e0e5f74ea64c98c07ed4ad0ff02131d41c0d7f78bef",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
@@ -303,6 +399,85 @@
         "online_rl",
         "offline_rl",
         "supervised"
+      ],
+      "config_path": "in/config/model/basics/dueling_resnet.yaml",
+      "config_paths": [
+        "in/config/model/basics/dueling_resnet.yaml"
+      ]
+    },
+    {
+      "id": "lstm",
+      "name": "LSTM Recurrent Neural Network",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Long Short-Term Memory (LSTM) recurrent network architecture with temporal attention pooling.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "lstm",
+        "recurrent",
+        "rnn",
+        "sequential"
+      ],
+      "target_path": "src/usr/models/lstm",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/lstm-1.0.0.zip",
+          "sha256": "505280f75efbe3032ba81362f226ad4a72812b5e3a077a55408c11222d61d19f",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ],
+      "config_path": "in/config/model/basics/lstm.yaml",
+      "config_paths": [
+        "in/config/model/basics/lstm.yaml"
+      ]
+    },
+    {
+      "id": "mlp",
+      "name": "Multi-Layer Perceptron (MLP)",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Standard Multi-Layer Perceptron neural network architectures for classification, value estimation, and policy modeling.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "mlp",
+        "neural",
+        "classification",
+        "policy"
+      ],
+      "target_path": "src/usr/models/mlp",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mlp-1.0.0.zip",
+          "sha256": "70c93d8bec532188bc4a0f859b15b0d90f0297f4cab103814cb94e0e7e52aa12",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ],
+      "config_path": "in/config/model/basics/mlp.yaml",
+      "config_paths": [
+        "in/config/model/basics/mlp.yaml",
+        "in/config/model/basics/mlp_classifier.yaml"
       ]
     },
     {
@@ -322,7 +497,7 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nature_cnn-1.0.0.zip",
-          "sha256": "515eda3576d8dfb71e92ab0794fae61dad5416251063cfa46084e0d4e8e9b58e",
+          "sha256": "ef97a92e190950a090ee25b83385eda9df5529793206485780012b7b8ca48ec3",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
@@ -332,6 +507,120 @@
         "online_rl",
         "offline_rl",
         "supervised"
+      ],
+      "config_path": "in/config/model/basics/nature_cnn.yaml",
+      "config_paths": [
+        "in/config/model/basics/nature_cnn.yaml"
+      ]
+    },
+    {
+      "id": "neumann",
+      "name": "NEUMANN Neural Symbolic Reasoner",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Neuro-symbolic message passing reasoner over logic graphs.",
+      "author": {
+        "name": "Hikaru Shindo"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "neuro-symbolic",
+        "neumann",
+        "logic",
+        "graph-reasoning",
+        "message-passing"
+      ],
+      "target_path": "src/usr/models/neumann",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann-1.0.0.zip",
+          "sha256": "2b4547d17304504890cb0d8fd4ef5eaf917ef96aa02eb2fd692d974b914987da",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl"
+      ],
+      "config_path": "in/config/model/neumann.yaml",
+      "config_paths": [
+        "in/config/model/neumann.yaml"
+      ]
+    },
+    {
+      "id": "nsfr",
+      "name": "Neural Symbolic Forward Reasoner (NSFR)",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Differentiable forward reasoning engine computing soft valuations over first-order logic clauses.",
+      "author": {
+        "name": "Hikaru Shindo"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "neuro-symbolic",
+        "nsfr",
+        "logic",
+        "differentiable-reasoning"
+      ],
+      "target_path": "src/usr/models/nsfr",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nsfr-1.0.0.zip",
+          "sha256": "7a33c5cdc0825a9514f6f357ba64438b5c6b933fe28e2bdbaf5de440544b14a4",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl"
+      ],
+      "config_path": "in/config/model/nsfr.yaml",
+      "config_paths": [
+        "in/config/model/nsfr.yaml"
+      ]
+    },
+    {
+      "id": "transformer",
+      "name": "Transformer Policy & Attention Networks",
+      "kind": "model",
+      "version": "1.0.0",
+      "description": "Multi-head self-attention and cross-attention transformer policy architectures with temporal attention pooling.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "model",
+        "transformer",
+        "attention",
+        "neural",
+        "sequential"
+      ],
+      "target_path": "src/usr/models/transformer",
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/transformer-1.0.0.zip",
+          "sha256": "eb87befa6d63122e3c37cedb7b9b1a8775800f5e571c10bfb501ba7f27fd4409",
+          "published_at": "2026-10-16T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ],
+      "config_path": "in/config/model/basics/transformer.yaml",
+      "config_paths": [
+        "in/config/model/basics/transformer.yaml"
       ]
     },
     {
@@ -472,7 +761,7 @@
     },
     {
       "id": "basic_suite",
-      "name": "Basic Benchmark Suite",
+      "name": "ThetaIDE Basics",
       "kind": "suite",
       "version": "1.0.0",
       "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, and standard deep neural network architectures.",
@@ -487,7 +776,7 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/basic_suite-1.0.0.zip",
-          "sha256": "20096a99892043cdea929bba3d677a21064555ecf024093070969e42cb1ba19a",
+          "sha256": "b3f6a57d2c1bcce32b0fc220f42e16572183f118b8ab605b4cb321278f3e4f48",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
@@ -500,29 +789,35 @@
       ]
     },
     {
-      "id": "standard_rl_suite",
-      "name": "Standard RL Suite",
+      "id": "dl_basics_suite",
+      "name": "Deep Learning Basics Suite",
       "kind": "suite",
       "version": "1.0.0",
-      "description": "Complete reinforcement learning stack for Theta-IDE: DNN, NatureCNN, and Dueling ResNet models; Online and Offline baselines; and Gymnasium Classic Control environments.",
+      "description": "Foundational deep learning architectures for Theta-IDE: Multi-Layer Perceptrons (MLP), Transformers, LSTMs, and Dense/Sequence Autoencoders.",
       "author": {
         "name": "Theta-IDE Team"
       },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
       "tags": [
         "suite",
-        "standard_rl_suite"
+        "deep_learning",
+        "mlp",
+        "transformer",
+        "lstm",
+        "autoencoder"
       ],
       "releases": {
         "1.0.0": {
           "tag": "v1.0.0",
-          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/standard_rl_suite-1.0.0.zip",
-          "sha256": "8977188bdf4797013d45b3ca82e1f3afaaaf206b1485c0721d9337a52367e9d6",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dl_basics_suite-1.0.0.zip",
+          "sha256": "39e0d67f3268ccee11d36d8777177f146e68709ed1d8046832cf3d7e0e90a804",
           "published_at": "2026-10-16T19:00:00Z"
         }
       },
-      "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT",
       "paradigms": [
+        "supervised",
+        "unsupervised",
         "online_rl",
         "offline_rl"
       ]

@@ -23,5 +23,12 @@
   "license": "MIT",
   "paradigms": [
     "online_rl"
+  ],
+  "config_path": "in/config/env/gym_classic_control/cartpole.yaml",
+  "config_paths": [
+    "in/config/env/gym_classic_control/cartpole.yaml",
+    "in/config/env/gym_classic_control/mountaincar.yaml",
+    "in/config/env/gym_classic_control/pendulum.yaml",
+    "in/config/env/gym_classic_control/acrobot.yaml"
   ]
 }

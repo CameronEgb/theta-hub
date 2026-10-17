@@ -1,0 +1,37 @@
+{
+  "id": "transformer",
+  "name": "Transformer Policy & Attention Networks",
+  "kind": "model",
+  "version": "1.0.0",
+  "description": "Multi-head self-attention and cross-attention transformer policy architectures with temporal attention pooling.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "model",
+    "transformer",
+    "attention",
+    "neural",
+    "sequential"
+  ],
+  "target_path": "src/usr/models/transformer",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/transformer-1.0.0.zip",
+      "sha256": "eb87befa6d63122e3c37cedb7b9b1a8775800f5e571c10bfb501ba7f27fd4409",
+      "published_at": "2026-10-16T19:00:00Z"
+    }
+  },
+  "paradigms": [
+    "online_rl",
+    "offline_rl",
+    "supervised"
+  ],
+  "config_path": "in/config/model/basics/transformer.yaml",
+  "config_paths": [
+    "in/config/model/basics/transformer.yaml"
+  ]
+}

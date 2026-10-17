@@ -1,0 +1,37 @@
+{
+  "id": "neumann",
+  "name": "NEUMANN Neural Symbolic Reasoner",
+  "kind": "model",
+  "version": "1.0.0",
+  "description": "Neuro-symbolic message passing reasoner over logic graphs.",
+  "author": {
+    "name": "Hikaru Shindo"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "model",
+    "neuro-symbolic",
+    "neumann",
+    "logic",
+    "graph-reasoning",
+    "message-passing"
+  ],
+  "target_path": "src/usr/models/neumann",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann-1.0.0.zip",
+      "sha256": "2b4547d17304504890cb0d8fd4ef5eaf917ef96aa02eb2fd692d974b914987da",
+      "published_at": "2026-10-16T19:00:00Z"
+    }
+  },
+  "paradigms": [
+    "online_rl",
+    "offline_rl"
+  ],
+  "config_path": "in/config/model/neumann.yaml",
+  "config_paths": [
+    "in/config/model/neumann.yaml"
+  ]
+}

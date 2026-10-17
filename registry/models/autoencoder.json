@@ -1,0 +1,37 @@
+{
+  "id": "autoencoder",
+  "name": "Dense & Sequence Autoencoders",
+  "kind": "model",
+  "version": "1.0.0",
+  "description": "Dense and sequence autoencoder architectures for unsupervised representation learning.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "model",
+    "autoencoder",
+    "unsupervised",
+    "representation",
+    "latent"
+  ],
+  "target_path": "src/usr/models/autoencoder",
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/autoencoder-1.0.0.zip",
+      "sha256": "247c53d82402eb8ab7b8e48decf0abba019195d001cc43dd7a493bb0bcc2223f",
+      "published_at": "2026-10-16T19:00:00Z"
+    }
+  },
+  "paradigms": [
+    "unsupervised",
+    "supervised"
+  ],
+  "config_path": "in/config/model/basics/autoencoder.yaml",
+  "config_paths": [
+    "in/config/model/basics/autoencoder.yaml",
+    "in/config/model/basics/dense_autoencoder.yaml"
+  ]
+}
