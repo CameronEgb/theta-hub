@@ -1,6 +1,6 @@
 {
   "kind": "model",
-  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "updated_at": "2026-10-17T00:41:14.857624+00:00",
   "count": 5,
   "components": [
     {
@@ -60,7 +60,12 @@
           "sha256": "a736032241682b3f439dbba2ac6fa65095996dbd1fa07380794c7cdbd1cad785",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "dnn",
@@ -84,7 +89,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "dueling_resnet",
@@ -108,7 +118,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "nature_cnn",
@@ -132,7 +147,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     }
   ]
 }

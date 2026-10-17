@@ -1,7 +1,7 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "updated_at": "2026-10-17T00:41:14.857624+00:00",
   "count": 15,
   "components": [
     {
@@ -37,7 +37,10 @@
           "sha256": "01aab257d29ee3517e7861bd0759cd29427e66de076b01669426c9249806c04d",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl"
+      ]
     },
     {
       "id": "doom-env",
@@ -67,7 +70,10 @@
           "sha256": "1e24dfcec1a229ec395b2c920d49de816eb89a2b43b44d1d707a618d3eba96c9",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl"
+      ]
     },
     {
       "id": "gym_classic_control",
@@ -91,7 +97,10 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl"
+      ]
     },
     {
       "id": "d3rlpy-suite",
@@ -129,7 +138,10 @@
           "sha256": "39e8b82929006eaf938bda1ed7d3f66bbc9e8c83dd9af603f82dfb8be5404619",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "offline_rl"
+      ]
     },
     {
       "id": "sb3-suite",
@@ -166,7 +178,10 @@
           "sha256": "daf4bc142c52fb7127fb6168980e9798c7c128342e03bddfc113994531055b07",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl"
+      ]
     },
     {
       "id": "blendrl",
@@ -225,7 +240,12 @@
           "sha256": "a736032241682b3f439dbba2ac6fa65095996dbd1fa07380794c7cdbd1cad785",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "dnn",
@@ -249,7 +269,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "dueling_resnet",
@@ -273,7 +298,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "nature_cnn",
@@ -297,7 +327,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "antigravity",
@@ -457,7 +492,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "standard_rl_suite",
@@ -481,7 +521,11 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl"
+      ]
     }
   ]
 }

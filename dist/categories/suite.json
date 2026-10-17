@@ -1,6 +1,6 @@
 {
   "kind": "suite",
-  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "updated_at": "2026-10-17T00:41:14.857624+00:00",
   "count": 2,
   "components": [
     {
@@ -25,7 +25,12 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl",
+        "supervised"
+      ]
     },
     {
       "id": "standard_rl_suite",
@@ -49,7 +54,11 @@
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "paradigms": [
+        "online_rl",
+        "offline_rl"
+      ]
     }
   ]
 }

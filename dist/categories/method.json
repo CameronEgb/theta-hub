@@ -1,6 +1,6 @@
 {
   "kind": "method",
-  "updated_at": "2026-10-16T23:43:52.411631+00:00",
+  "updated_at": "2026-10-17T00:41:14.857624+00:00",
   "count": 2,
   "components": [
     {
@@ -39,7 +39,10 @@
           "sha256": "39e8b82929006eaf938bda1ed7d3f66bbc9e8c83dd9af603f82dfb8be5404619",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "offline_rl"
+      ]
     },
     {
       "id": "sb3-suite",
@@ -76,7 +79,10 @@
           "sha256": "daf4bc142c52fb7127fb6168980e9798c7c128342e03bddfc113994531055b07",
           "published_at": "2026-10-16T19:00:00Z"
         }
-      }
+      },
+      "paradigms": [
+        "online_rl"
+      ]
     }
   ]
 }

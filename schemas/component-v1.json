@@ -80,6 +80,11 @@
       "type": "string",
       "description": "Icon identifier or relative SVG path."
     },
+    "paradigms": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Learning paradigms compatible with this component (e.g. ['online_rl', 'offline_rl', 'supervised'])."
+    },
     "releases": {
       "type": "object",
       "minProperties": 1,

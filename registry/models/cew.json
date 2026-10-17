@@ -25,5 +25,10 @@
       "sha256": "a736032241682b3f439dbba2ac6fa65095996dbd1fa07380794c7cdbd1cad785",
       "published_at": "2026-10-16T19:00:00Z"
     }
-  }
+  },
+  "paradigms": [
+    "online_rl",
+    "offline_rl",
+    "supervised"
+  ]
 }
