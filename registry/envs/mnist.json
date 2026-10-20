@@ -22,18 +22,24 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mnist-1.0.0.zip",
-      "sha256": "7f1542cbeb24bc9a06781c5f119ce7c7234a1d935b9add0a8982b1e86524ccc9",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "665d22962a933669f781496229fba23fbcbea64be6fc615acafc500f478a8214",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
     "supervised",
-    "unsupervised",
-    "online_rl"
+    "unsupervised"
   ],
   "config_path": "in/config/env/mnist.yaml",
   "config_paths": [
     "in/config/env/mnist.yaml",
     "in/config/env/digits.yaml"
-  ]
+  ],
+  "dependencies": {
+    "pip": [
+      "scikit-learn",
+      "numpy",
+      "torch"
+    ]
+  }
 }

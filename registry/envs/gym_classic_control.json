@@ -2,8 +2,8 @@
   "id": "gym_classic_control",
   "name": "Gymnasium Classic Control",
   "kind": "env",
-  "version": "1.0.0",
-  "description": "Standard Gymnasium classic control environments: CartPole, MountainCar, Pendulum, and Acrobot.",
+  "version": "1.0.1",
+  "description": "Standard Gymnasium classic control environments: MountainCar, Pendulum, and Acrobot.",
   "author": {
     "name": "Theta-IDE Team"
   },
@@ -17,6 +17,12 @@
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.0.zip",
       "sha256": "c5ab0499e49ddef6ea8067c4691a814a11fa7d0527253b0c50da4fbce7291bf6",
       "published_at": "2026-10-16T19:00:00Z"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.1.zip",
+      "sha256": "2e01043ac0dd049bb421659776b96276a501c942a59ecf3f45a219f3ce25525e",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -24,9 +30,8 @@
   "paradigms": [
     "online_rl"
   ],
-  "config_path": "in/config/env/gym_classic_control/cartpole.yaml",
+  "config_path": "in/config/env/gym_classic_control/acrobot.yaml",
   "config_paths": [
-    "in/config/env/gym_classic_control/cartpole.yaml",
     "in/config/env/gym_classic_control/mountaincar.yaml",
     "in/config/env/gym_classic_control/pendulum.yaml",
     "in/config/env/gym_classic_control/acrobot.yaml"
