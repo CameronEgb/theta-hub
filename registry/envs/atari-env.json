@@ -19,20 +19,286 @@
   ],
   "target_path": "in/envs/atari",
   "dependencies": {
+    "components": [
+      "thetalib"
+    ],
     "pip": [
       "gymnasium[atari]",
-      "ale-py"
+      "ale-py",
+      "opencv-python"
     ]
   },
   "releases": {
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/atari_env-1.0.0.zip",
-      "sha256": "01aab257d29ee3517e7861bd0759cd29427e66de076b01669426c9249806c04d",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "30164478d6cc56305a7ec751d1dac33db035edb797e91c6e81aa9632a95e1247",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
     "online_rl"
-  ]
+  ],
+  "config_path": "in/config/env/atari.yaml",
+  "config_paths": [
+    "in/config/env/atari.yaml",
+    "in/config/env/atari/beam_rider.yaml",
+    "in/config/env/atari/breakout.yaml",
+    "in/config/env/atari/mspacman.yaml",
+    "in/config/env/atari/pong.yaml",
+    "in/config/env/atari/qbert.yaml",
+    "in/config/env/atari/seaquest.yaml",
+    "in/config/env/atari/space_invaders.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/env/atari/beam_rider.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/breakout.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/mspacman.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/pong.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/qbert.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/seaquest.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/atari/space_invaders.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "offline_only": {
+            "type": "boolean"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
 }

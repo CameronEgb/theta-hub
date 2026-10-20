@@ -15,8 +15,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dueling_resnet-1.0.0.zip",
-      "sha256": "5f70fbbfab25e535e1003e0e5f74ea64c98c07ed4ad0ff02131d41c0d7f78bef",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "70196ecf7abce536bd12a66a49081dffe0873ee9a75575c1508172edd69bd8c7",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -29,5 +29,19 @@
   "config_path": "in/config/model/basics/dueling_resnet.yaml",
   "config_paths": [
     "in/config/model/basics/dueling_resnet.yaml"
-  ]
+  ],
+  "target_path": "src/usr/models/dueling_resnet",
+  "suite": "thetalib",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "hidden_sizes": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      }
+    }
+  }
 }

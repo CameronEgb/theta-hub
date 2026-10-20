@@ -1,0 +1,173 @@
+{
+  "kind": "evaluator",
+  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "count": 3,
+  "components": [
+    {
+      "id": "mimic-early-prediction",
+      "name": "MIMIC Early Prediction Evaluator",
+      "kind": "evaluator",
+      "version": "1.0.0",
+      "description": "Septic shock early prediction evaluator, AUPRC scoring, counterfactual analysis, and agreement metrics.",
+      "author": {
+        "name": "Theta Clinical Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "evaluator",
+        "mimic-early-prediction"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_early_prediction-1.0.0.zip",
+          "sha256": "5a3e8c4b0937268353c79f170e7cf3f78568e2229abdbfe58e7745e84bbbb77a",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "config_path": "in/config/eval/mimic/early_prediction.yaml",
+      "target_path": "src/usr/eval/early_prediction",
+      "paradigms": [
+        "supervised",
+        "offline_rl"
+      ],
+      "config_paths": [
+        "in/config/eval/mimic/early_prediction.yaml"
+      ],
+      "suite": "mimic",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "window_hours": {
+            "type": "integer"
+          },
+          "eval_batch_size": {
+            "type": "integer"
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "opt_thresh": {
+            "type": "number"
+          },
+          "ep_ckpt_root": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "id": "pyrenees-evaluator",
+      "name": "Pyrenees Evaluator",
+      "kind": "evaluator",
+      "version": "1.0.0",
+      "description": "Trajectory evaluation, tier scoring (Low, Med, High), and out-of-distribution verification for Pyrenees environments.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "evaluator",
+        "pyrenees-evaluator"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/pyrenees_evaluator-1.0.0.zip",
+          "sha256": "a4ad74f698ee4f1643e534a1a908083f903b01667959d6b4efa8bfb4834e628e",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "config_path": "in/config/eval/pyrenees/pyrenees_evaluator.yaml",
+      "target_path": "src/usr/eval/pyrenees_evaluator",
+      "paradigms": [
+        "offline_rl"
+      ],
+      "config_paths": [
+        "in/config/eval/pyrenees/pyrenees_evaluator.yaml"
+      ],
+      "suite": "pyrenees",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "batch_size": {
+            "type": "integer"
+          },
+          "tier_names": {
+            "type": "array"
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "reward-shaping",
+      "name": "Potential-Based Reward Shaping",
+      "kind": "evaluator",
+      "version": "1.0.0",
+      "description": "Potential-based reward shaping hooks using Early Prediction (EP) septic shock classifiers for offline RL.",
+      "author": {
+        "name": "Theta Clinical Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "evaluator",
+        "reward-shaping"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/reward_shaping-1.0.0.zip",
+          "sha256": "7af973bacb8541b26c7cc0ab5b0c9ec2bfb92f1a270de5ae01a5c99a53db93cb",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "config_path": "in/config/eval/mimic/reward_shaping.yaml",
+      "target_path": "src/usr/eval/reward_shaping",
+      "paradigms": [
+        "offline_rl"
+      ],
+      "config_paths": [
+        "in/config/eval/mimic/reward_shaping.yaml"
+      ],
+      "suite": "mimic",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "lambda_coef": {
+            "type": "number"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "window_hours": {
+            "type": "integer"
+          },
+          "use_volatility": {
+            "type": "boolean"
+          },
+          "ep_ckpt_dir": {
+            "type": "string"
+          },
+          "ep_architecture": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

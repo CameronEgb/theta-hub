@@ -28,8 +28,19 @@
     },
     "kind": {
       "type": "string",
-      "enum": ["plugin", "method", "model", "env", "experiment", "suite", "package"],
-      "description": "Component category."
+      "enum": [
+        "plugin",
+        "method",
+        "model",
+        "env",
+        "experiment",
+        "suite",
+        "package",
+        "datamodule",
+        "evaluator",
+        "plotter"
+      ],
+      "description": "Component category, including data modules, evaluators, and plotters."
     },
     "version": {
       "type": "string",
@@ -44,11 +55,20 @@
     },
     "author": {
       "type": "object",
-      "required": ["name"],
+      "required": [
+        "name"
+      ],
       "properties": {
-        "name": { "type": "string" },
-        "github": { "type": "string" },
-        "url": { "type": "string", "format": "uri" }
+        "name": {
+          "type": "string"
+        },
+        "github": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
       }
     },
     "repository": {
@@ -62,7 +82,9 @@
     },
     "tags": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "uniqueItems": true
     },
     "target_path": {
@@ -72,8 +94,12 @@
     "compatibility": {
       "type": "object",
       "properties": {
-        "thetaide": { "type": "string" },
-        "python": { "type": "string" }
+        "thetaide": {
+          "type": "string"
+        },
+        "python": {
+          "type": "string"
+        }
       }
     },
     "icon": {
@@ -82,27 +108,226 @@
     },
     "paradigms": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Learning paradigms compatible with this component (e.g. ['online_rl', 'offline_rl', 'supervised'])."
+    },
+    "suite": {
+      "type": "string",
+      "description": "ID of the package that supplies this internal component."
+    },
+    "hidden": {
+      "type": "boolean",
+      "description": "Whether normal Hub discovery omits this package-internal component."
+    },
+    "provides": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional component IDs installed by this package."
+    },
+    "test_suite": {
+      "type": "object",
+      "description": "Optional executable conformance cases and component configuration contracts.",
+      "required": [
+        "format",
+        "cases"
+      ],
+      "properties": {
+        "format": {
+          "const": "theta.test-suite/v1"
+        },
+        "cases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description",
+              "experiment",
+              "expectation",
+              "execution"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "experiment": {
+                "type": "string"
+              },
+              "expectation": {
+                "enum": [
+                  "runnable",
+                  "blocked"
+                ]
+              },
+              "execution": {
+                "enum": [
+                  "preflight",
+                  "run"
+                ]
+              },
+              "overrides": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked_reason": {
+                "type": "string"
+              },
+              "expected_error": {
+                "type": "string"
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "expectation": {
+                      "const": "runnable"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "execution": {
+                      "const": "run"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "expectation": {
+                      "const": "blocked"
+                    }
+                  }
+                },
+                "then": {
+                  "required": [
+                    "blocked_reason"
+                  ],
+                  "properties": {
+                    "execution": {
+                      "const": "preflight"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "description",
+              "config_path",
+              "required"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "config_path": {
+                "type": "string"
+              },
+              "required": {
+                "type": "object",
+                "minProperties": 1
+              }
+            }
+          }
+        }
+      }
     },
     "releases": {
       "type": "object",
       "minProperties": 1,
       "additionalProperties": {
         "type": "object",
-        "required": ["tag", "url"],
+        "required": [
+          "tag",
+          "url"
+        ],
         "properties": {
-          "tag": { "type": "string" },
-          "url": { "type": "string", "format": "uri" },
+          "tag": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
           "sha256": {
             "type": "string",
             "pattern": "^([a-fA-F0-9]{64})?$",
             "description": "SHA-256 hash of the release archive."
           },
-          "published_at": { "type": "string" },
-          "size_bytes": { "type": "integer", "minimum": 0 }
+          "published_at": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          }
         }
       }
+    },
+    "parameter_schema": {
+      "type": "object",
+      "required": [
+        "type",
+        "properties"
+      ],
+      "properties": {
+        "type": {
+          "const": "object"
+        },
+        "properties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-theta-domain": {
+          "type": "string"
+        },
+        "x-theta-config-schemas": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          },
+          "description": "Per-config-path JSON Schemas for components that bundle multiple profiles."
+        }
+      },
+      "description": "JSON Schema for component parameters. Use properties for nested keys, enum for dropdown choices, x-theta-domain: model for installed model choices, and x-theta-config-schemas for profile-specific schemas."
     }
   },
   "additionalProperties": true

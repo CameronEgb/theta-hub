@@ -15,13 +15,13 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.0.zip",
-      "sha256": "c5ab0499e49ddef6ea8067c4691a814a11fa7d0527253b0c50da4fbce7291bf6",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "2b21c4dad3f755c1dc100073ac0d461c96c04764efc16fd3c9d629681c9b9722",
+      "published_at": "2026-10-18T19:00:00Z"
     },
     "1.0.1": {
       "tag": "v1.0.1",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.1.zip",
-      "sha256": "2e01043ac0dd049bb421659776b96276a501c942a59ecf3f45a219f3ce25525e",
+      "sha256": "b705a00d4996d432f754654c46d3ab5cb8d3035dd4a2b8cb7d5786735f1d13eb",
       "published_at": "2026-10-18T19:00:00Z"
     }
   },
@@ -35,5 +35,107 @@
     "in/config/env/gym_classic_control/mountaincar.yaml",
     "in/config/env/gym_classic_control/pendulum.yaml",
     "in/config/env/gym_classic_control/acrobot.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/env/gym_classic_control/mountaincar.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/gym_classic_control/pendulum.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/gym_classic_control/acrobot.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
 }

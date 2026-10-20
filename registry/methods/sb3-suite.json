@@ -30,11 +30,204 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.0.zip",
-      "sha256": "daf4bc142c52fb7127fb6168980e9798c7c128342e03bddfc113994531055b07",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "a202c8f76a2277cb4def1369014892f289682fefd06bfe4e8233e7829dadc36c",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
     "online_rl"
-  ]
+  ],
+  "config_paths": [
+    "in/config/agent/sb3/a2c.yaml",
+    "in/config/agent/sb3/dqn.yaml",
+    "in/config/agent/sb3/ppo.yaml",
+    "in/config/agent/sb3/sac.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/agent/sb3/a2c.yaml": {
+        "type": "object",
+        "properties": {
+          "algorithm": {
+            "type": "string"
+          },
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "policy": {
+            "type": "string",
+            "enum": [
+              "MlpPolicy",
+              "CnnPolicy",
+              "MultiInputPolicy"
+            ]
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "n_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "ent_coef": {
+            "type": "number"
+          },
+          "vf_coef": {
+            "type": "number"
+          }
+        }
+      },
+      "in/config/agent/sb3/dqn.yaml": {
+        "type": "object",
+        "properties": {
+          "algorithm": {
+            "type": "string"
+          },
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "policy": {
+            "type": "string",
+            "enum": [
+              "MlpPolicy",
+              "CnnPolicy",
+              "MultiInputPolicy"
+            ]
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "buffer_size": {
+            "type": "integer"
+          },
+          "learning_starts": {
+            "type": "integer"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "train_freq": {
+            "type": "integer"
+          },
+          "target_update_interval": {
+            "type": "integer"
+          },
+          "exploration_fraction": {
+            "type": "number"
+          }
+        }
+      },
+      "in/config/agent/sb3/ppo.yaml": {
+        "type": "object",
+        "properties": {
+          "algorithm": {
+            "type": "string"
+          },
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "policy": {
+            "type": "string",
+            "enum": [
+              "MlpPolicy",
+              "CnnPolicy",
+              "MultiInputPolicy"
+            ]
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "n_steps": {
+            "type": "integer"
+          },
+          "n_epochs": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "clip_range": {
+            "type": "number"
+          }
+        }
+      },
+      "in/config/agent/sb3/sac.yaml": {
+        "type": "object",
+        "properties": {
+          "algorithm": {
+            "type": "string"
+          },
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "policy": {
+            "type": "string",
+            "enum": [
+              "MlpPolicy",
+              "CnnPolicy",
+              "MultiInputPolicy"
+            ]
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "buffer_size": {
+            "type": "integer"
+          },
+          "learning_starts": {
+            "type": "integer"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "tau": {
+            "type": "number"
+          },
+          "ent_coef": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
 }

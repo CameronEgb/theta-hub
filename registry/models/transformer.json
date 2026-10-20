@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/transformer-1.0.0.zip",
-      "sha256": "eb87befa6d63122e3c37cedb7b9b1a8775800f5e571c10bfb501ba7f27fd4409",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "4fa377122d17761429711d8e427186e36c0c820c8049287aca026c3d321bf6af",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -33,5 +33,28 @@
   "config_path": "in/config/model/basics/transformer.yaml",
   "config_paths": [
     "in/config/model/basics/transformer.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "d_model": {
+        "type": "integer"
+      },
+      "nhead": {
+        "type": "integer"
+      },
+      "num_layers": {
+        "type": "integer"
+      },
+      "dim_feedforward": {
+        "type": "integer"
+      },
+      "dropout": {
+        "type": "number"
+      },
+      "max_len": {
+        "type": "integer"
+      }
+    }
+  }
 }

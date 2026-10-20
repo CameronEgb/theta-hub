@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/autoencoder-1.0.0.zip",
-      "sha256": "247c53d82402eb8ab7b8e48decf0abba019195d001cc43dd7a493bb0bcc2223f",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "198afa6ed72b47ccd42938bd34ddddf1aa27c654c1a4e34672e9dc5d1b13cee2",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -33,5 +33,39 @@
   "config_paths": [
     "in/config/model/basics/autoencoder.yaml",
     "in/config/model/basics/dense_autoencoder.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/model/basics/autoencoder.yaml": {
+        "type": "object",
+        "properties": {
+          "latent_dim": {
+            "type": "integer"
+          },
+          "hidden_dims": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "in/config/model/basics/dense_autoencoder.yaml": {
+        "type": "object",
+        "properties": {
+          "latent_dim": {
+            "type": "integer"
+          },
+          "hidden_dims": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  }
 }

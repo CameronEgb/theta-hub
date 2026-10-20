@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/lstm-1.0.0.zip",
-      "sha256": "505280f75efbe3032ba81362f226ad4a72812b5e3a077a55408c11222d61d19f",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "df96ba85cfc189008f8ce7787f5c6bf704d602d143f782cbc8877514737e868f",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -33,5 +33,28 @@
   "config_path": "in/config/model/basics/lstm.yaml",
   "config_paths": [
     "in/config/model/basics/lstm.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "hidden_dim": {
+        "type": "integer"
+      },
+      "num_layers": {
+        "type": "integer"
+      },
+      "dropout": {
+        "type": "number"
+      },
+      "use_dual_pooling": {
+        "type": "boolean"
+      },
+      "use_tcn_conv": {
+        "type": "boolean"
+      },
+      "bidirectional": {
+        "type": "boolean"
+      }
+    }
+  }
 }

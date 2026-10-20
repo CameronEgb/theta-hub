@@ -22,8 +22,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cew-1.0.0.zip",
-      "sha256": "a736032241682b3f439dbba2ac6fa65095996dbd1fa07380794c7cdbd1cad785",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "0a8d0e96f93491e36c19756212af78593756ba2074101e03bb04e24da9fc013d",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -31,5 +31,22 @@
     "offline_rl",
     "supervised"
   ],
-  "config_path": "in/config/model/cew.yaml"
+  "config_path": "in/config/model/cew.yaml",
+  "config_paths": [
+    "in/config/model/cew.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "ecm_dthr": {
+        "type": "number"
+      },
+      "fyd": {
+        "type": "boolean"
+      },
+      "fyd_top_k": {
+        "type": "integer"
+      }
+    }
+  }
 }

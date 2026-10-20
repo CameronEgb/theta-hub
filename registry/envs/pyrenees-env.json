@@ -1,0 +1,79 @@
+{
+  "id": "pyrenees-env",
+  "name": "Pyrenees Hybrid RL Environment Suite",
+  "kind": "env",
+  "version": "1.0.0",
+  "description": "Pyrenees mountain driving benchmarks, valuation logic, symbolic rules, and evaluation interfaces.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "env",
+    "pyrenees-env"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/pyrenees_env-1.0.0.zip",
+      "sha256": "bdf32e61f471d7630150151318a5825c678034d009e7fb436a394239d99dd36d",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "config_path": "in/config/env/pyrenees.yaml",
+  "target_path": "in/envs/pyrenees",
+  "dependencies": {
+    "components": [
+      "thetalib",
+      "pyrenees-evaluator",
+      "pyrenees-benchmark-suite"
+    ]
+  },
+  "paradigms": [
+    "offline_rl"
+  ],
+  "suite": "pyrenees",
+  "hidden": true,
+  "config_paths": [
+    "in/config/env/pyrenees.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "monitor_metric": {
+        "type": "string"
+      },
+      "preprocess_on_load": {
+        "type": "boolean"
+      },
+      "env_id": {
+        "type": "string"
+      },
+      "offline_only": {
+        "type": "boolean"
+      },
+      "gamma": {
+        "type": "number"
+      },
+      "gae_lambda": {
+        "type": "number"
+      },
+      "reward_type": {
+        "type": "string"
+      },
+      "problem_type": {
+        "type": "string"
+      },
+      "n_actions": {
+        "type": "integer"
+      },
+      "default_plots": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "mimic-env",
+  "name": "MIMIC-III Clinical Environment Suite",
+  "kind": "env",
+  "version": "1.0.0",
+  "description": "ICU sepsis benchmarks, valuation hooks, clinical rules, and transition interfaces for MIMIC-III.",
+  "author": {
+    "name": "Theta Clinical Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "env",
+    "mimic-env"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_env-1.0.0.zip",
+      "sha256": "71f37fda725ab65f81346c7517ec3d8e7935e7d303dc4832d23af4239f808841",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "config_path": "in/config/env/mimic.yaml",
+  "target_path": "in/envs/mimic",
+  "dependencies": {
+    "components": [
+      "clinical-timeseries-data",
+      "mimic-early-prediction",
+      "mimic-clinical-suite"
+    ]
+  },
+  "paradigms": [
+    "supervised",
+    "offline_rl"
+  ],
+  "suite": "mimic",
+  "hidden": true,
+  "config_paths": [
+    "in/config/env/mimic.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "monitor_metric": {
+        "type": "string"
+      },
+      "env_id": {
+        "type": "string"
+      },
+      "offline_only": {
+        "type": "boolean"
+      },
+      "preprocess_on_load": {
+        "type": "boolean"
+      },
+      "gamma": {
+        "type": "number"
+      },
+      "gae_lambda": {
+        "type": "number"
+      },
+      "reward_type": {
+        "type": "string"
+      },
+      "dataset_name": {
+        "type": "string"
+      },
+      "reward_shaping": {
+        "type": "object",
+        "properties": {
+          "ep_ckpt_dir": {
+            "type": "string"
+          },
+          "lambda_coef": {
+            "type": "number"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "window_hours": {
+            "type": "integer"
+          },
+          "ep_arch": {
+            "type": "string"
+          },
+          "cql_ckpt_dir": {
+            "type": "string"
+          }
+        }
+      },
+      "default_plots": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "kind": "model",
-  "updated_at": "2026-10-17T03:23:27.912876+00:00",
+  "updated_at": "2026-10-20T23:05:21.140247+00:00",
   "count": 11,
   "components": [
     {
@@ -26,8 +26,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/autoencoder-1.0.0.zip",
-          "sha256": "247c53d82402eb8ab7b8e48decf0abba019195d001cc43dd7a493bb0bcc2223f",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "198afa6ed72b47ccd42938bd34ddddf1aa27c654c1a4e34672e9dc5d1b13cee2",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -38,7 +38,41 @@
       "config_paths": [
         "in/config/model/basics/autoencoder.yaml",
         "in/config/model/basics/dense_autoencoder.yaml"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {},
+        "x-theta-config-schemas": {
+          "in/config/model/basics/autoencoder.yaml": {
+            "type": "object",
+            "properties": {
+              "latent_dim": {
+                "type": "integer"
+              },
+              "hidden_dims": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "in/config/model/basics/dense_autoencoder.yaml": {
+            "type": "object",
+            "properties": {
+              "latent_dim": {
+                "type": "integer"
+              },
+              "hidden_dims": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
     },
     {
       "id": "blendrl",
@@ -65,8 +99,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
-          "sha256": "3ad2c188536c353496d866bfca2ca99f88f071acd7121edec5c1dab666ce611d",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "431620f2894ddeec4148db8ab037655cf9e2354a481b4f833445c96fd70e74ac",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "config_path": "in/config/model/blendrl.yaml",
@@ -76,7 +110,61 @@
       "paradigms": [
         "online_rl",
         "offline_rl"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "actor_mode": {
+            "type": "string",
+            "enum": [
+              "hybrid",
+              "logic",
+              "neural"
+            ]
+          },
+          "blender": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": [
+                  "logic",
+                  "neural"
+                ]
+              },
+              "blend_function": {
+                "type": "string",
+                "enum": [
+                  "softmax",
+                  "gumbel_softmax"
+                ]
+              }
+            }
+          },
+          "blend_q_values": {
+            "type": "boolean"
+          },
+          "blend_ent_coef": {
+            "type": "number"
+          },
+          "logic_lr": {
+            "type": "number"
+          },
+          "blender_lr": {
+            "type": "number"
+          },
+          "neural": {
+            "type": "string",
+            "x-theta-domain": "model",
+            "description": "Neural policy and critic module."
+          },
+          "symbolic": {
+            "type": "string",
+            "x-theta-domain": "model",
+            "description": "Symbolic reasoning module."
+          }
+        }
+      }
     },
     {
       "id": "cew",
@@ -102,8 +190,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/cew-1.0.0.zip",
-          "sha256": "a736032241682b3f439dbba2ac6fa65095996dbd1fa07380794c7cdbd1cad785",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "0a8d0e96f93491e36c19756212af78593756ba2074101e03bb04e24da9fc013d",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -111,7 +199,24 @@
         "offline_rl",
         "supervised"
       ],
-      "config_path": "in/config/model/cew.yaml"
+      "config_path": "in/config/model/cew.yaml",
+      "config_paths": [
+        "in/config/model/cew.yaml"
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "ecm_dthr": {
+            "type": "number"
+          },
+          "fyd": {
+            "type": "boolean"
+          },
+          "fyd_top_k": {
+            "type": "integer"
+          }
+        }
+      }
     },
     {
       "id": "dnn",
@@ -130,8 +235,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dnn-1.0.0.zip",
-          "sha256": "ecdabc0d172b021f5e6097fd19d876951a9c260967bc7d66a660e4eee97c520e",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "8ce3ae1a0321c28bf07889d7bc664689c4a8829d1ef3d481c534f65032cf84ad",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -144,7 +249,34 @@
       "config_path": "in/config/model/basics/dnn.yaml",
       "config_paths": [
         "in/config/model/basics/dnn.yaml"
-      ]
+      ],
+      "target_path": "src/usr/models/dnn",
+      "suite": "thetalib",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "hidden_sizes": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "activation": {
+            "type": "string",
+            "enum": [
+              "relu",
+              "gelu",
+              "tanh",
+              "elu",
+              "silu",
+              "sigmoid",
+              "leaky_relu",
+              "identity"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "dueling_resnet",
@@ -163,8 +295,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dueling_resnet-1.0.0.zip",
-          "sha256": "5f70fbbfab25e535e1003e0e5f74ea64c98c07ed4ad0ff02131d41c0d7f78bef",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "70196ecf7abce536bd12a66a49081dffe0873ee9a75575c1508172edd69bd8c7",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -177,7 +309,21 @@
       "config_path": "in/config/model/basics/dueling_resnet.yaml",
       "config_paths": [
         "in/config/model/basics/dueling_resnet.yaml"
-      ]
+      ],
+      "target_path": "src/usr/models/dueling_resnet",
+      "suite": "thetalib",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "hidden_sizes": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          }
+        }
+      }
     },
     {
       "id": "lstm",
@@ -202,8 +348,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/lstm-1.0.0.zip",
-          "sha256": "505280f75efbe3032ba81362f226ad4a72812b5e3a077a55408c11222d61d19f",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "df96ba85cfc189008f8ce7787f5c6bf704d602d143f782cbc8877514737e868f",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -214,7 +360,30 @@
       "config_path": "in/config/model/basics/lstm.yaml",
       "config_paths": [
         "in/config/model/basics/lstm.yaml"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "hidden_dim": {
+            "type": "integer"
+          },
+          "num_layers": {
+            "type": "integer"
+          },
+          "dropout": {
+            "type": "number"
+          },
+          "use_dual_pooling": {
+            "type": "boolean"
+          },
+          "use_tcn_conv": {
+            "type": "boolean"
+          },
+          "bidirectional": {
+            "type": "boolean"
+          }
+        }
+      }
     },
     {
       "id": "mlp",
@@ -239,8 +408,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mlp-1.0.0.zip",
-          "sha256": "70c93d8bec532188bc4a0f859b15b0d90f0297f4cab103814cb94e0e7e52aa12",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "a2cb543f3aac933ca4148bedf46eb32bebefec3af344da44bc5f8464dded8adb",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -252,7 +421,66 @@
       "config_paths": [
         "in/config/model/basics/mlp.yaml",
         "in/config/model/basics/mlp_classifier.yaml"
-      ]
+      ],
+      "suite": "thetalib",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {},
+        "x-theta-config-schemas": {
+          "in/config/model/basics/mlp.yaml": {
+            "type": "object",
+            "properties": {
+              "hidden_dims": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "activation": {
+                "type": "string",
+                "enum": [
+                  "relu",
+                  "gelu",
+                  "tanh",
+                  "elu",
+                  "silu",
+                  "sigmoid",
+                  "leaky_relu",
+                  "identity"
+                ]
+              }
+            }
+          },
+          "in/config/model/basics/mlp_classifier.yaml": {
+            "type": "object",
+            "properties": {
+              "hidden_dims": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              },
+              "activation": {
+                "type": "string",
+                "enum": [
+                  "relu",
+                  "gelu",
+                  "tanh",
+                  "elu",
+                  "silu",
+                  "sigmoid",
+                  "leaky_relu",
+                  "identity"
+                ]
+              },
+              "dropout": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
     },
     {
       "id": "nature_cnn",
@@ -271,8 +499,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nature_cnn-1.0.0.zip",
-          "sha256": "ef97a92e190950a090ee25b83385eda9df5529793206485780012b7b8ca48ec3",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "46c7d4157d99f46e29a6b19aec92f0471bb995b19990812e706fa2a38a07f414",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -285,7 +513,21 @@
       "config_path": "in/config/model/basics/nature_cnn.yaml",
       "config_paths": [
         "in/config/model/basics/nature_cnn.yaml"
-      ]
+      ],
+      "target_path": "src/usr/models/nature_cnn",
+      "suite": "thetalib",
+      "hidden": true,
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "in_channels": {
+            "type": "integer"
+          },
+          "features_dim": {
+            "type": "integer"
+          }
+        }
+      }
     },
     {
       "id": "neumann",
@@ -311,8 +553,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann-1.0.0.zip",
-          "sha256": "2b4547d17304504890cb0d8fd4ef5eaf917ef96aa02eb2fd692d974b914987da",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "47ff2125a956fee7fa01383511448d89c0add7f66de1de7c083a2bb8f22b52e0",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -322,7 +564,18 @@
       "config_path": "in/config/model/neumann.yaml",
       "config_paths": [
         "in/config/model/neumann.yaml"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "rules": {
+            "type": "string"
+          },
+          "logic_type": {
+            "type": "string"
+          }
+        }
+      }
     },
     {
       "id": "nsfr",
@@ -347,8 +600,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nsfr-1.0.0.zip",
-          "sha256": "7a33c5cdc0825a9514f6f357ba64438b5c6b933fe28e2bdbaf5de440544b14a4",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "2cbbc76388c7137de0d51877081075ccf25a644e9fd26f0023a80d1547cc87d9",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -358,7 +611,18 @@
       "config_path": "in/config/model/nsfr.yaml",
       "config_paths": [
         "in/config/model/nsfr.yaml"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "rules": {
+            "type": "string"
+          },
+          "logic_type": {
+            "type": "string"
+          }
+        }
+      }
     },
     {
       "id": "transformer",
@@ -383,8 +647,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/transformer-1.0.0.zip",
-          "sha256": "eb87befa6d63122e3c37cedb7b9b1a8775800f5e571c10bfb501ba7f27fd4409",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "4fa377122d17761429711d8e427186e36c0c820c8049287aca026c3d321bf6af",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -395,7 +659,30 @@
       "config_path": "in/config/model/basics/transformer.yaml",
       "config_paths": [
         "in/config/model/basics/transformer.yaml"
-      ]
+      ],
+      "parameter_schema": {
+        "type": "object",
+        "properties": {
+          "d_model": {
+            "type": "integer"
+          },
+          "nhead": {
+            "type": "integer"
+          },
+          "num_layers": {
+            "type": "integer"
+          },
+          "dim_feedforward": {
+            "type": "integer"
+          },
+          "dropout": {
+            "type": "number"
+          },
+          "max_len": {
+            "type": "integer"
+          }
+        }
+      }
     }
   ]
 }

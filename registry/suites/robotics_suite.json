@@ -1,0 +1,42 @@
+{
+  "id": "robotics_suite",
+  "name": "Robotics Suite",
+  "kind": "suite",
+  "version": "1.0.1",
+  "description": "A ready-to-use Theta-IDE robotics group with MuJoCo robot tasks, PPO and SAC baselines, MLP policies, and standard training plots.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "suite",
+    "robotics",
+    "mujoco"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics_suite-1.0.0.zip",
+      "sha256": "11e118c1e61e461201862d033811a08cc865f32ec117e2717e6471b66bda63cc",
+      "published_at": "2026-10-20T00:00:00Z"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics_suite-1.0.1.zip",
+      "sha256": "9260678241d0171351afb4efd99fa9524629764eb665f223946fa2a8f0a3c39c",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "paradigms": [
+    "online_rl"
+  ],
+  "dependencies": {
+    "components": [
+      "robotics"
+    ]
+  },
+  "compatibility": {
+    "theta": ">=2.0.0"
+  }
+}

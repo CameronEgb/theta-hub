@@ -1,0 +1,57 @@
+{
+  "id": "reward-shaping",
+  "name": "Potential-Based Reward Shaping",
+  "kind": "evaluator",
+  "version": "1.0.0",
+  "description": "Potential-based reward shaping hooks using Early Prediction (EP) septic shock classifiers for offline RL.",
+  "author": {
+    "name": "Theta Clinical Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "evaluator",
+    "reward-shaping"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/reward_shaping-1.0.0.zip",
+      "sha256": "7af973bacb8541b26c7cc0ab5b0c9ec2bfb92f1a270de5ae01a5c99a53db93cb",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "config_path": "in/config/eval/mimic/reward_shaping.yaml",
+  "target_path": "src/usr/eval/reward_shaping",
+  "paradigms": [
+    "offline_rl"
+  ],
+  "config_paths": [
+    "in/config/eval/mimic/reward_shaping.yaml"
+  ],
+  "suite": "mimic",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "lambda_coef": {
+        "type": "number"
+      },
+      "gamma": {
+        "type": "number"
+      },
+      "window_hours": {
+        "type": "integer"
+      },
+      "use_volatility": {
+        "type": "boolean"
+      },
+      "ep_ckpt_dir": {
+        "type": "string"
+      },
+      "ep_architecture": {
+        "type": "string"
+      }
+    }
+  }
+}

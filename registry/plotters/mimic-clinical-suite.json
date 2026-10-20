@@ -1,0 +1,171 @@
+{
+  "id": "mimic-clinical-suite",
+  "name": "MIMIC Clinical Evaluation & Visualization Suite",
+  "kind": "plotter",
+  "version": "1.0.0",
+  "description": "Clinical policy alignment, septic shock trajectory counterfactuals, and clinician agreement visualizers.",
+  "author": {
+    "name": "Theta Clinical Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "plotter",
+    "mimic-clinical-suite"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_clinical_suite-1.0.0.zip",
+      "sha256": "94e90b75d6e74aac1cf28333608ff1ad196d681f78ff9b9ba79e980ff8632024",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "target_path": "plot/mimic_clinical_suite",
+  "paradigms": [
+    "supervised",
+    "offline_rl"
+  ],
+  "config_paths": [
+    "in/config/plot/mimic/clinical_alignment.yaml",
+    "in/config/plot/mimic/clinical.yaml",
+    "in/config/plot/mimic/ep_agreement.yaml",
+    "in/config/plot/mimic/ep_trajectories.yaml",
+    "in/config/plot/mimic/ep_counterfactual_table.yaml",
+    "in/config/plot/mimic/ep_dl_sweep.yaml"
+  ],
+  "suite": "mimic",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/plot/mimic/clinical_alignment.yaml": {
+        "type": "object",
+        "properties": {
+          "plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "agreement_metric": {
+            "type": "string"
+          },
+          "window_hours": {
+            "type": "integer"
+          },
+          "empty_union_score": {
+            "type": "number"
+          },
+          "use_cache": {
+            "type": "boolean"
+          }
+        }
+      },
+      "in/config/plot/mimic/clinical.yaml": {
+        "type": "object",
+        "properties": {
+          "figsize": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "dpi": {
+            "type": "integer"
+          },
+          "clinician_baseline": {
+            "type": "number"
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/plot/mimic/ep_agreement.yaml": {
+        "type": "object",
+        "properties": {
+          "agreement_metric": {
+            "type": "string"
+          },
+          "window_hours": {
+            "type": "integer"
+          },
+          "empty_union_score": {
+            "type": "number"
+          },
+          "figsize": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "dpi": {
+            "type": "integer"
+          }
+        }
+      },
+      "in/config/plot/mimic/ep_trajectories.yaml": {
+        "type": "object",
+        "properties": {
+          "max_trajectories": {
+            "type": "integer"
+          },
+          "sample_interval": {
+            "type": "integer"
+          },
+          "figsize": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "dpi": {
+            "type": "integer"
+          }
+        }
+      },
+      "in/config/plot/mimic/ep_counterfactual_table.yaml": {
+        "type": "object",
+        "properties": {
+          "format": {
+            "type": "string"
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/plot/mimic/ep_dl_sweep.yaml": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "remake": {
+            "type": "boolean"
+          },
+          "n_splits": {
+            "type": "integer"
+          },
+          "use_volatility": {
+            "type": "boolean"
+          },
+          "dataset_path": {
+            "type": "string"
+          },
+          "ep_ckpt_root": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

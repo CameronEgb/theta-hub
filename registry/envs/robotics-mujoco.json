@@ -1,0 +1,216 @@
+{
+  "id": "robotics-mujoco",
+  "name": "Gymnasium MuJoCo Robotics",
+  "kind": "env",
+  "version": "1.0.1",
+  "description": "Continuous-control robotics benchmarks from Gymnasium MuJoCo: Ant, HalfCheetah, Hopper, Walker2d, and Humanoid.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "env",
+    "robotics",
+    "mujoco"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics-mujoco-1.0.0.zip",
+      "sha256": "17dedf7de1c8bbfd3617e0dac3941314d2c5e0a3e1d103481966af824d32c9fc",
+      "published_at": "2026-10-20T00:00:00Z"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics-mujoco-1.0.1.zip",
+      "sha256": "530e18d297a5a1f5cda14f1cffc70e31b90bcaa6f9d3fddd2d379b1d1fb4bc05",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "paradigms": [
+    "online_rl"
+  ],
+  "dependencies": {
+    "pip": [
+      "gymnasium[mujoco]>=1.0.0"
+    ]
+  },
+  "compatibility": {
+    "theta": ">=2.0.0"
+  },
+  "config_paths": [
+    "in/config/env/mujoco/ant.yaml",
+    "in/config/env/mujoco/half_cheetah.yaml",
+    "in/config/env/mujoco/hopper.yaml",
+    "in/config/env/mujoco/walker2d.yaml",
+    "in/config/env/mujoco/humanoid.yaml"
+  ],
+  "target_path": "in/envs/mujoco",
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/env/mujoco/ant.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/mujoco/half_cheetah.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/mujoco/hopper.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/mujoco/walker2d.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/mujoco/humanoid.yaml": {
+        "type": "object",
+        "properties": {
+          "monitor_metric": {
+            "type": "string"
+          },
+          "preprocess_on_load": {
+            "type": "boolean"
+          },
+          "env_id": {
+            "type": "string"
+          },
+          "num_envs": {
+            "type": "integer"
+          },
+          "num_steps": {
+            "type": "integer"
+          },
+          "gamma": {
+            "type": "number"
+          },
+          "gae_lambda": {
+            "type": "number"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

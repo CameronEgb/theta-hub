@@ -15,8 +15,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dnn-1.0.0.zip",
-      "sha256": "ecdabc0d172b021f5e6097fd19d876951a9c260967bc7d66a660e4eee97c520e",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "8ce3ae1a0321c28bf07889d7bc664689c4a8829d1ef3d481c534f65032cf84ad",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -29,5 +29,32 @@
   "config_path": "in/config/model/basics/dnn.yaml",
   "config_paths": [
     "in/config/model/basics/dnn.yaml"
-  ]
+  ],
+  "target_path": "src/usr/models/dnn",
+  "suite": "thetalib",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "hidden_sizes": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "activation": {
+        "type": "string",
+        "enum": [
+          "relu",
+          "gelu",
+          "tanh",
+          "elu",
+          "silu",
+          "sigmoid",
+          "leaky_relu",
+          "identity"
+        ]
+      }
+    }
+  }
 }

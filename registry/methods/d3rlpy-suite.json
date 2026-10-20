@@ -31,11 +31,148 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/d3rlpy_suite-1.0.0.zip",
-      "sha256": "39e8b82929006eaf938bda1ed7d3f66bbc9e8c83dd9af603f82dfb8be5404619",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "d1855253933406082b5967c4d823498b4b54b22d2ee6954f80069fb33a4f01ff",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
     "offline_rl"
-  ]
+  ],
+  "config_paths": [
+    "in/config/agent/d3rlpy/bc.yaml",
+    "in/config/agent/d3rlpy/cql.yaml",
+    "in/config/agent/d3rlpy/iql.yaml",
+    "in/config/agent/d3rlpy/td3_bc.yaml"
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/agent/d3rlpy/bc.yaml": {
+        "type": "object",
+        "properties": {
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "n_steps": {
+            "type": "integer"
+          }
+        }
+      },
+      "in/config/agent/d3rlpy/cql.yaml": {
+        "type": "object",
+        "properties": {
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "n_steps": {
+            "type": "integer"
+          },
+          "cql_alpha": {
+            "type": "number"
+          },
+          "gamma": {
+            "type": "number"
+          }
+        }
+      },
+      "in/config/agent/d3rlpy/iql.yaml": {
+        "type": "object",
+        "properties": {
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "n_steps": {
+            "type": "integer"
+          },
+          "expectile": {
+            "type": "number"
+          },
+          "weight_temp": {
+            "type": "number"
+          },
+          "gamma": {
+            "type": "number"
+          }
+        }
+      },
+      "in/config/agent/d3rlpy/td3_bc.yaml": {
+        "type": "object",
+        "properties": {
+          "engine": {
+            "type": "string",
+            "enum": [
+              "sb3",
+              "d3rlpy",
+              "cleanrl",
+              "custom"
+            ]
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "learning_rate": {
+            "type": "string"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "n_steps": {
+            "type": "integer"
+          },
+          "alpha": {
+            "type": "number"
+          },
+          "gamma": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
 }

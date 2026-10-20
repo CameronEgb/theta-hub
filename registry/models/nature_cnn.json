@@ -15,8 +15,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nature_cnn-1.0.0.zip",
-      "sha256": "ef97a92e190950a090ee25b83385eda9df5529793206485780012b7b8ca48ec3",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "46c7d4157d99f46e29a6b19aec92f0471bb995b19990812e706fa2a38a07f414",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -29,5 +29,19 @@
   "config_path": "in/config/model/basics/nature_cnn.yaml",
   "config_paths": [
     "in/config/model/basics/nature_cnn.yaml"
-  ]
+  ],
+  "target_path": "src/usr/models/nature_cnn",
+  "suite": "thetalib",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "in_channels": {
+        "type": "integer"
+      },
+      "features_dim": {
+        "type": "integer"
+      }
+    }
+  }
 }

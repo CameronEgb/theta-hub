@@ -1,0 +1,125 @@
+{
+  "kind": "experiment",
+  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "count": 3,
+  "components": [
+    {
+      "id": "mimic",
+      "name": "MIMIC Clinical Sepsis Benchmark",
+      "kind": "experiment",
+      "version": "1.0.0",
+      "description": "Complete MIMIC-III sepsis experiment suite: offline clinical benchmark configs, group defaults, ICU environment hooks, timeseries data module, early prediction & reward shaping evaluators, and clinical agreement plotters.",
+      "author": {
+        "name": "Theta Research"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "experiment",
+        "mimic"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic-1.0.0.zip",
+          "sha256": "c96ac16d722bbbbc4b216c6cda1d29506c658b18217d809589650950df169d61",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "target_path": "in/config/experiment/mimic",
+      "dependencies": {
+        "components": [
+          "thetalib",
+          "d3rlpy-suite",
+          "dueling_resnet"
+        ]
+      },
+      "paradigms": [
+        "supervised",
+        "offline_rl"
+      ]
+    },
+    {
+      "id": "pyrenees",
+      "name": "Pyrenees Hybrid Benchmark",
+      "kind": "experiment",
+      "version": "1.0.0",
+      "description": "Complete Pyrenees benchmark experiment suite: offline reinforcement learning configs, group defaults, continuous control environment hooks, trajectory evaluators, and BlendRL authority/handover plotters.",
+      "author": {
+        "name": "Theta Research"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "experiment",
+        "pyrenees"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/pyrenees-1.0.0.zip",
+          "sha256": "8fcbaba9f627e486a7749d448547e2b0254397e40984f0f916182ea967cbbd36",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "target_path": "in/config/experiment/pyrenees",
+      "dependencies": {
+        "components": [
+          "thetalib",
+          "d3rlpy-suite",
+          "blendrl",
+          "dueling_resnet",
+          "cew"
+        ]
+      },
+      "paradigms": [
+        "offline_rl"
+      ]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics Continuous Control Experiments",
+      "kind": "experiment",
+      "version": "1.0.1",
+      "description": "A robotics experiment group with MuJoCo environment presets and Stable-Baselines3 PPO and SAC baselines for five continuous-control robots.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "experiment",
+        "robotics",
+        "mujoco"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics-1.0.0.zip",
+          "sha256": "9cab5b5a5bbe5a7cbba542b57c36dc2d756f53cea1f4317b79faebbe5c4ebb80",
+          "published_at": "2026-10-20T00:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics-1.0.1.zip",
+          "sha256": "44e70da59ebac303c941b6443dbae4820d577fefa2eb7e23036a579bd1c7dcc7",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl"
+      ],
+      "target_path": "in/config/experiment/robotics",
+      "dependencies": {
+        "components": [
+          "robotics-mujoco",
+          "sb3-suite",
+          "thetalib"
+        ]
+      },
+      "compatibility": {
+        "theta": ">=2.0.0"
+      }
+    }
+  ]
+}

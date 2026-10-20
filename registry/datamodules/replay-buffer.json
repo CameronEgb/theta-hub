@@ -1,0 +1,54 @@
+{
+  "id": "replay-buffer",
+  "name": "RL Replay Buffer Data Module",
+  "kind": "datamodule",
+  "version": "1.0.0",
+  "description": "General transition replay loader and chunk reader for offline reinforcement learning.",
+  "author": {
+    "name": "Theta-IDE Team"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "datamodule",
+    "replay-buffer"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/replay_buffer-1.0.0.zip",
+      "sha256": "a07f966b1cc05d3132dfaa61ad5d642111440fcef52afb71402faf06e5d40b50",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "config_path": "in/config/data/thetalib/replay_buffer.yaml",
+  "target_path": "src/usr/data/replay_buffer",
+  "paradigms": [
+    "offline_rl"
+  ],
+  "config_paths": [
+    "in/config/data/thetalib/replay_buffer.yaml"
+  ],
+  "suite": "thetalib",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "batch_size": {
+        "type": "integer"
+      },
+      "val_split": {
+        "type": "number"
+      },
+      "chunk_size": {
+        "type": "integer"
+      },
+      "num_workers": {
+        "type": "integer"
+      },
+      "pin_memory": {
+        "type": "boolean"
+      }
+    }
+  }
+}

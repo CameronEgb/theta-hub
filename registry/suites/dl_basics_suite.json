@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dl_basics_suite-1.0.0.zip",
-      "sha256": "39e0d67f3268ccee11d36d8777177f146e68709ed1d8046832cf3d7e0e90a804",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "931d222bca55425366853af480eafc65f294f1a6871e8c98402aa7771fcce929",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -30,5 +30,13 @@
     "unsupervised",
     "online_rl",
     "offline_rl"
-  ]
+  ],
+  "dependencies": {
+    "components": [
+      "mlp",
+      "transformer",
+      "lstm",
+      "autoencoder"
+    ]
+  }
 }

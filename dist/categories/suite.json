@@ -1,14 +1,14 @@
 {
   "kind": "suite",
-  "updated_at": "2026-10-17T03:23:27.912876+00:00",
-  "count": 2,
+  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "count": 4,
   "components": [
     {
       "id": "basic_suite",
       "name": "ThetaIDE Basics",
       "kind": "suite",
       "version": "1.0.0",
-      "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, and standard deep neural network architectures.",
+      "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, standard deep neural network architectures, and ThetaLib core figures and loaders.",
       "author": {
         "name": "Theta-IDE Team"
       },
@@ -20,8 +20,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/basic_suite-1.0.0.zip",
-          "sha256": "b3f6a57d2c1bcce32b0fc220f42e16572183f118b8ab605b4cb321278f3e4f48",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "a79dd876972d06472672d7512b60c5cdc46be9389939d25db762566e1dcd7f9c",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -30,7 +30,19 @@
         "online_rl",
         "offline_rl",
         "supervised"
-      ]
+      ],
+      "dependencies": {
+        "components": [
+          "thetalib",
+          "sb3-suite",
+          "d3rlpy-suite",
+          "atari-env",
+          "gym_classic_control",
+          "dnn",
+          "nature_cnn",
+          "dueling_resnet"
+        ]
+      }
     },
     {
       "id": "dl_basics_suite",
@@ -55,8 +67,8 @@
         "1.0.0": {
           "tag": "v1.0.0",
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/dl_basics_suite-1.0.0.zip",
-          "sha256": "39e0d67f3268ccee11d36d8777177f146e68709ed1d8046832cf3d7e0e90a804",
-          "published_at": "2026-10-16T19:00:00Z"
+          "sha256": "931d222bca55425366853af480eafc65f294f1a6871e8c98402aa7771fcce929",
+          "published_at": "2026-10-18T19:00:00Z"
         }
       },
       "paradigms": [
@@ -64,7 +76,201 @@
         "unsupervised",
         "online_rl",
         "offline_rl"
-      ]
+      ],
+      "dependencies": {
+        "components": [
+          "mlp",
+          "transformer",
+          "lstm",
+          "autoencoder"
+        ]
+      }
+    },
+    {
+      "id": "robotics_suite",
+      "name": "Robotics Suite",
+      "kind": "suite",
+      "version": "1.0.1",
+      "description": "A ready-to-use Theta-IDE robotics group with MuJoCo robot tasks, PPO and SAC baselines, MLP policies, and standard training plots.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/theta-plugins",
+      "license": "MIT",
+      "tags": [
+        "suite",
+        "robotics",
+        "mujoco"
+      ],
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics_suite-1.0.0.zip",
+          "sha256": "11e118c1e61e461201862d033811a08cc865f32ec117e2717e6471b66bda63cc",
+          "published_at": "2026-10-20T00:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/robotics_suite-1.0.1.zip",
+          "sha256": "9260678241d0171351afb4efd99fa9524629764eb665f223946fa2a8f0a3c39c",
+          "published_at": "2026-10-18T19:00:00Z"
+        }
+      },
+      "paradigms": [
+        "online_rl"
+      ],
+      "dependencies": {
+        "components": [
+          "robotics"
+        ]
+      },
+      "compatibility": {
+        "theta": ">=2.0.0"
+      }
+    },
+    {
+      "id": "theta-validation-suite",
+      "name": "Theta Validation Suite",
+      "kind": "suite",
+      "version": "1.0.0",
+      "description": "Executable component conformance recipes for the ThetaIDE Basics suite.",
+      "author": {
+        "name": "Theta-IDE Team"
+      },
+      "repository": "https://github.com/CameronEgb/Theta-IDE",
+      "license": "MIT",
+      "tags": [
+        "suite",
+        "testing",
+        "conformance",
+        "validation"
+      ],
+      "dependencies": {
+        "components": [
+          "basic_suite"
+        ]
+      },
+      "releases": {
+        "1.0.0": {
+          "tag": "v1.0.0",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/theta-validation-suite-1.0.0.zip",
+          "sha256": "c944cf0a787c88d0294cd2571a13a0ee62925f490cfb87f572a69e8830d52ed9",
+          "published_at": "2026-10-20T00:00:00Z",
+          "size_bytes": 4673
+        }
+      },
+      "paradigms": [
+        "online_rl"
+      ],
+      "config_paths": [
+        "in/config/experiment/theta_validation/_base.yaml",
+        "in/config/experiment/theta_validation/online_smoke.yaml",
+        "in/config/experiment/theta_validation/missing_method.yaml",
+        "in/config/experiment/theta_validation/missing_model.yaml",
+        "in/config/experiment/theta_validation/incompatible_agent.yaml"
+      ],
+      "test_suite": {
+        "format": "theta.test-suite/v1",
+        "components": [
+          {
+            "id": "gym_classic_control/cartpole",
+            "title": "CartPole live environment",
+            "description": "The Basic Suite environment must expose an online-RL CartPole environment.",
+            "config_path": "in/config/env/gym_classic_control/cartpole.yaml",
+            "required": {
+              "env_id": "CartPole-v1",
+              "compatible_paradigms": [
+                "online_rl"
+              ]
+            }
+          },
+          {
+            "id": "sb3/ppo",
+            "title": "SB3 PPO algorithm",
+            "description": "PPO must retain its SB3 engine, algorithm identity, and online-RL capability declaration.",
+            "config_path": "in/config/agent/sb3/ppo.yaml",
+            "required": {
+              "engine": "sb3",
+              "algorithm": "PPO",
+              "compatible_paradigms": [
+                "online_rl"
+              ]
+            }
+          },
+          {
+            "id": "d3rlpy/cql",
+            "title": "d3rlpy CQL algorithm",
+            "description": "CQL must retain its d3rlpy engine, algorithm identity, and offline-RL capability declaration.",
+            "config_path": "in/config/agent/d3rlpy/cql.yaml",
+            "required": {
+              "engine": "d3rlpy",
+              "algorithm": "CQL",
+              "compatible_paradigms": [
+                "offline_rl"
+              ]
+            }
+          },
+          {
+            "id": "basics/dnn",
+            "title": "DNN model",
+            "description": "The Basic Suite DNN must expose its architecture configuration.",
+            "config_path": "in/config/model/basics/dnn.yaml",
+            "required": {
+              "architecture": "dnn"
+            }
+          },
+          {
+            "id": "thetalib/tabular_data",
+            "title": "Tabular data module",
+            "description": "The data-loader adapter must remain independently configurable from a dataset environment.",
+            "config_path": "in/config/data/thetalib/tabular_data.yaml",
+            "required": {
+              "data_module": "tabular_data",
+              "batch_size": 128
+            }
+          }
+        ],
+        "cases": [
+          {
+            "id": "online-smoke",
+            "title": "Online smoke recipe",
+            "description": "A minimal online-RL recipe using Basic Suite PPO, DNN, and CartPole must execute successfully.",
+            "experiment": "theta_validation/online_smoke",
+            "expectation": "runnable",
+            "execution": "run"
+          },
+          {
+            "id": "missing-method",
+            "title": "Missing method is blocked",
+            "description": "An online-RL recipe that omits its required method must be stopped before training begins.",
+            "experiment": "theta_validation/missing_method",
+            "expectation": "blocked",
+            "execution": "preflight",
+            "blocked_reason": "The online-RL method contract requires an algorithm and model.",
+            "expected_error": "methods"
+          },
+          {
+            "id": "missing-model",
+            "title": "Method without a model is blocked",
+            "description": "A method that names an algorithm but omits its model must not launch.",
+            "experiment": "theta_validation/missing_model",
+            "expectation": "blocked",
+            "execution": "preflight",
+            "blocked_reason": "Every method requires a model architecture.",
+            "expected_error": "model"
+          },
+          {
+            "id": "incompatible-agent",
+            "title": "Offline CQL in online RL is blocked",
+            "description": "The suite must reject an offline-only algorithm when an online-RL recipe selects it.",
+            "experiment": "theta_validation/incompatible_agent",
+            "expectation": "blocked",
+            "execution": "preflight",
+            "blocked_reason": "CQL declares compatibility with offline RL only.",
+            "expected_error": "not allowed"
+          }
+        ]
+      }
     }
   ]
 }

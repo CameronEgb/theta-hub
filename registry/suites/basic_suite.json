@@ -3,7 +3,7 @@
   "name": "ThetaIDE Basics",
   "kind": "suite",
   "version": "1.0.0",
-  "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, and standard deep neural network architectures.",
+  "description": "Basic reinforcement learning benchmark suite for Theta-IDE: Stable-Baselines3, d3rlpy offline baselines, Atari 2600 (ALE), Gymnasium classic control, standard deep neural network architectures, and ThetaLib core figures and loaders.",
   "author": {
     "name": "Theta-IDE Team"
   },
@@ -15,8 +15,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/basic_suite-1.0.0.zip",
-      "sha256": "b3f6a57d2c1bcce32b0fc220f42e16572183f118b8ab605b4cb321278f3e4f48",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "a79dd876972d06472672d7512b60c5cdc46be9389939d25db762566e1dcd7f9c",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -25,5 +25,17 @@
     "online_rl",
     "offline_rl",
     "supervised"
-  ]
+  ],
+  "dependencies": {
+    "components": [
+      "thetalib",
+      "sb3-suite",
+      "d3rlpy-suite",
+      "atari-env",
+      "gym_classic_control",
+      "dnn",
+      "nature_cnn",
+      "dueling_resnet"
+    ]
+  }
 }

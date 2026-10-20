@@ -22,7 +22,7 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mnist-1.0.0.zip",
-      "sha256": "665d22962a933669f781496229fba23fbcbea64be6fc615acafc500f478a8214",
+      "sha256": "1cfa08b4ea906da07fd9845888b94d7afd7b7c24d9c511de796faa1f8ed0c125",
       "published_at": "2026-10-18T19:00:00Z"
     }
   },
@@ -41,5 +41,87 @@
       "numpy",
       "torch"
     ]
+  },
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/env/mnist.yaml": {
+        "type": "object",
+        "properties": {
+          "env_id": {
+            "type": "string"
+          },
+          "environment_source": {
+            "type": "string"
+          },
+          "monitor_metric": {
+            "type": "string"
+          },
+          "dataset_name": {
+            "type": "string"
+          },
+          "obs_dim": {
+            "type": "integer"
+          },
+          "n_actions": {
+            "type": "integer"
+          },
+          "use_sequences": {
+            "type": "boolean"
+          },
+          "val_fraction": {
+            "type": "number"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "in/config/env/digits.yaml": {
+        "type": "object",
+        "properties": {
+          "env_id": {
+            "type": "string"
+          },
+          "environment_source": {
+            "type": "string"
+          },
+          "monitor_metric": {
+            "type": "string"
+          },
+          "dataset_name": {
+            "type": "string"
+          },
+          "obs_dim": {
+            "type": "integer"
+          },
+          "n_actions": {
+            "type": "integer"
+          },
+          "use_sequences": {
+            "type": "boolean"
+          },
+          "val_fraction": {
+            "type": "number"
+          },
+          "batch_size": {
+            "type": "integer"
+          },
+          "default_plots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
   }
 }

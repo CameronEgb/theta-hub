@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/nsfr-1.0.0.zip",
-      "sha256": "7a33c5cdc0825a9514f6f357ba64438b5c6b933fe28e2bdbaf5de440544b14a4",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "2cbbc76388c7137de0d51877081075ccf25a644e9fd26f0023a80d1547cc87d9",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -32,5 +32,16 @@
   "config_path": "in/config/model/nsfr.yaml",
   "config_paths": [
     "in/config/model/nsfr.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "rules": {
+        "type": "string"
+      },
+      "logic_type": {
+        "type": "string"
+      }
+    }
+  }
 }

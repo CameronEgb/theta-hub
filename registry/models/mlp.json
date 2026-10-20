@@ -21,8 +21,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mlp-1.0.0.zip",
-      "sha256": "70c93d8bec532188bc4a0f859b15b0d90f0297f4cab103814cb94e0e7e52aa12",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "a2cb543f3aac933ca4148bedf46eb32bebefec3af344da44bc5f8464dded8adb",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -34,5 +34,64 @@
   "config_paths": [
     "in/config/model/basics/mlp.yaml",
     "in/config/model/basics/mlp_classifier.yaml"
-  ]
+  ],
+  "suite": "thetalib",
+  "hidden": true,
+  "parameter_schema": {
+    "type": "object",
+    "properties": {},
+    "x-theta-config-schemas": {
+      "in/config/model/basics/mlp.yaml": {
+        "type": "object",
+        "properties": {
+          "hidden_dims": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "activation": {
+            "type": "string",
+            "enum": [
+              "relu",
+              "gelu",
+              "tanh",
+              "elu",
+              "silu",
+              "sigmoid",
+              "leaky_relu",
+              "identity"
+            ]
+          }
+        }
+      },
+      "in/config/model/basics/mlp_classifier.yaml": {
+        "type": "object",
+        "properties": {
+          "hidden_dims": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "activation": {
+            "type": "string",
+            "enum": [
+              "relu",
+              "gelu",
+              "tanh",
+              "elu",
+              "silu",
+              "sigmoid",
+              "leaky_relu",
+              "identity"
+            ]
+          },
+          "dropout": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
 }

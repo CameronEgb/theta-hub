@@ -22,8 +22,8 @@
     "1.0.0": {
       "tag": "v1.0.0",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/neumann-1.0.0.zip",
-      "sha256": "2b4547d17304504890cb0d8fd4ef5eaf917ef96aa02eb2fd692d974b914987da",
-      "published_at": "2026-10-16T19:00:00Z"
+      "sha256": "47ff2125a956fee7fa01383511448d89c0add7f66de1de7c083a2bb8f22b52e0",
+      "published_at": "2026-10-18T19:00:00Z"
     }
   },
   "paradigms": [
@@ -33,5 +33,16 @@
   "config_path": "in/config/model/neumann.yaml",
   "config_paths": [
     "in/config/model/neumann.yaml"
-  ]
+  ],
+  "parameter_schema": {
+    "type": "object",
+    "properties": {
+      "rules": {
+        "type": "string"
+      },
+      "logic_type": {
+        "type": "string"
+      }
+    }
+  }
 }

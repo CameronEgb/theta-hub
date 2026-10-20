@@ -1,0 +1,37 @@
+{
+  "id": "pyrenees",
+  "name": "Pyrenees Hybrid Benchmark",
+  "kind": "experiment",
+  "version": "1.0.0",
+  "description": "Complete Pyrenees benchmark experiment suite: offline reinforcement learning configs, group defaults, continuous control environment hooks, trajectory evaluators, and BlendRL authority/handover plotters.",
+  "author": {
+    "name": "Theta Research"
+  },
+  "repository": "https://github.com/CameronEgb/theta-plugins",
+  "license": "MIT",
+  "tags": [
+    "experiment",
+    "pyrenees"
+  ],
+  "releases": {
+    "1.0.0": {
+      "tag": "v1.0.0",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/pyrenees-1.0.0.zip",
+      "sha256": "8fcbaba9f627e486a7749d448547e2b0254397e40984f0f916182ea967cbbd36",
+      "published_at": "2026-10-18T19:00:00Z"
+    }
+  },
+  "target_path": "in/config/experiment/pyrenees",
+  "dependencies": {
+    "components": [
+      "thetalib",
+      "d3rlpy-suite",
+      "blendrl",
+      "dueling_resnet",
+      "cew"
+    ]
+  },
+  "paradigms": [
+    "offline_rl"
+  ]
+}

@@ -2,8 +2,8 @@
   "id": "antigravity",
   "name": "Antigravity Agent",
   "kind": "plugin",
-  "version": "1.0.0",
-  "description": "Integrated Google Antigravity Agent for pair programming and codebase assistance.",
+  "version": "0.1.5",
+  "description": "Integrated Google Antigravity Agent for pair programming and codebase assistance with full-panel and sidepane modes.",
   "author": {
     "name": "Antigravity Team",
     "github": "google-antigravity",
@@ -22,8 +22,8 @@
     "0.1.5": {
       "tag": "v0.1.5",
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/antigravity-0.1.5.zip",
-      "sha256": "dadf64894a0312e59c49c180f06b0fb1ca865cf70db08e665f8db1c00732bc12",
-      "published_at": "2026-10-12T00:00:00Z"
+      "sha256": "747fc603a01c35ad0144e9e52b9ad1b1defbba396f1412f0c52853e9a11ca546",
+      "published_at": "2026-10-18T19:00:00Z"
     },
     "0.1.4": {
       "tag": "v0.1.4",
