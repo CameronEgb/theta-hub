@@ -1,7 +1,7 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "updated_at": "2026-10-21T18:10:14.967291+00:00",
   "count": 41,
   "components": [
     {
@@ -1578,7 +1578,7 @@
       "id": "d3rlpy-suite",
       "name": "d3rlpy Offline RL Suite",
       "kind": "method",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "description": "Standard offline reinforcement learning algorithms (CQL, IQL, TD3+BC, BC) powered by d3rlpy.",
       "author": {
         "name": "Takuma Seno & d3rlpy Contributors",
@@ -1609,6 +1609,18 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/d3rlpy_suite-1.0.0.zip",
           "sha256": "d1855253933406082b5967c4d823498b4b54b22d2ee6954f80069fb33a4f01ff",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/d3rlpy_suite-1.0.1.zip",
+          "sha256": "766a75ca819f8593ad760b6c71942e9dfc4d54801161e1a60ef595e284bda754",
+          "published_at": "2026-10-21T15:17:54.143258+00:00"
+        },
+        "1.0.2": {
+          "tag": "v1.0.2",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/d3rlpy_suite-1.0.2.zip",
+          "sha256": "b0b5a520595f4739321a73e3c6b5501bbe3219a0a68d46ea438e2f438322f965",
+          "published_at": "2026-10-21T18:10:09.769235+00:00"
         }
       },
       "paradigms": [
@@ -1627,15 +1639,6 @@
           "in/config/agent/d3rlpy/bc.yaml": {
             "type": "object",
             "properties": {
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
-              },
               "algorithm": {
                 "type": "string"
               },
@@ -1647,21 +1650,15 @@
               },
               "n_steps": {
                 "type": "integer"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
           "in/config/agent/d3rlpy/cql.yaml": {
             "type": "object",
             "properties": {
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
-              },
               "algorithm": {
                 "type": "string"
               },
@@ -1679,21 +1676,15 @@
               },
               "gamma": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
           "in/config/agent/d3rlpy/iql.yaml": {
             "type": "object",
             "properties": {
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
-              },
               "algorithm": {
                 "type": "string"
               },
@@ -1714,21 +1705,15 @@
               },
               "gamma": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
           "in/config/agent/d3rlpy/td3_bc.yaml": {
             "type": "object",
             "properties": {
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
-              },
               "algorithm": {
                 "type": "string"
               },
@@ -1746,6 +1731,9 @@
               },
               "gamma": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           }
@@ -1756,7 +1744,7 @@
       "id": "sb3-suite",
       "name": "Stable-Baselines3 Suite",
       "kind": "method",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "description": "Standard reinforcement learning algorithms (PPO, DQN, A2C, SAC) powered by Stable-Baselines3.",
       "author": {
         "name": "DLR-RM & SB3 Contributors",
@@ -1786,6 +1774,18 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.0.zip",
           "sha256": "a202c8f76a2277cb4def1369014892f289682fefd06bfe4e8233e7829dadc36c",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.1.zip",
+          "sha256": "aa5380f049a4af8aedd4bc063e6b6e8dd32ef53206f8ea8dfce3644a7c5be75a",
+          "published_at": "2026-10-21T15:17:54.138804+00:00"
+        },
+        "1.0.2": {
+          "tag": "v1.0.2",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/sb3_suite-1.0.2.zip",
+          "sha256": "e69b1a70e0a7799cbaa25348d0b14b844e276e8144a90d0191932b2714559da9",
+          "published_at": "2026-10-21T18:10:09.766730+00:00"
         }
       },
       "paradigms": [
@@ -1806,15 +1806,6 @@
             "properties": {
               "algorithm": {
                 "type": "string"
-              },
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
               },
               "policy": {
                 "type": "string",
@@ -1838,6 +1829,9 @@
               },
               "vf_coef": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
@@ -1846,15 +1840,6 @@
             "properties": {
               "algorithm": {
                 "type": "string"
-              },
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
               },
               "policy": {
                 "type": "string",
@@ -1887,6 +1872,9 @@
               },
               "exploration_fraction": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
@@ -1895,15 +1883,6 @@
             "properties": {
               "algorithm": {
                 "type": "string"
-              },
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
               },
               "policy": {
                 "type": "string",
@@ -1933,6 +1912,9 @@
               },
               "clip_range": {
                 "type": "number"
+              },
+              "entrypoint": {
+                "type": "string"
               }
             }
           },
@@ -1941,15 +1923,6 @@
             "properties": {
               "algorithm": {
                 "type": "string"
-              },
-              "engine": {
-                "type": "string",
-                "enum": [
-                  "sb3",
-                  "d3rlpy",
-                  "cleanrl",
-                  "custom"
-                ]
               },
               "policy": {
                 "type": "string",
@@ -1978,6 +1951,9 @@
                 "type": "number"
               },
               "ent_coef": {
+                "type": "string"
+              },
+              "entrypoint": {
                 "type": "string"
               }
             }
