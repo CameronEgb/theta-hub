@@ -1,13 +1,13 @@
 {
   "kind": "evaluator",
-  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "updated_at": "2026-10-21T18:10:14.967291+00:00",
   "count": 3,
   "components": [
     {
       "id": "mimic-early-prediction",
       "name": "MIMIC Early Prediction Evaluator",
       "kind": "evaluator",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Septic shock early prediction evaluator, AUPRC scoring, counterfactual analysis, and agreement metrics.",
       "author": {
         "name": "Theta Clinical Team"
@@ -24,6 +24,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_early_prediction-1.0.0.zip",
           "sha256": "5a3e8c4b0937268353c79f170e7cf3f78568e2229abdbfe58e7745e84bbbb77a",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_early_prediction-1.0.1.zip",
+          "sha256": "8e655f24529b584c4fab919d3b7f408d67d1967b1bcb79a65b34fb9dc3d17c4f",
+          "published_at": "2026-10-21T15:06:51.819788+00:00"
         }
       },
       "config_path": "in/config/eval/mimic/early_prediction.yaml",

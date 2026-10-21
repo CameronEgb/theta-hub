@@ -2,7 +2,7 @@
   "id": "mimic-env",
   "name": "MIMIC-III Clinical Environment Suite",
   "kind": "env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ICU sepsis benchmarks, valuation hooks, clinical rules, and transition interfaces for MIMIC-III.",
   "author": {
     "name": "Theta Clinical Team"
@@ -19,6 +19,12 @@
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_env-1.0.0.zip",
       "sha256": "71f37fda725ab65f81346c7517ec3d8e7935e7d303dc4832d23af4239f808841",
       "published_at": "2026-10-18T19:00:00Z"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_env-1.0.1.zip",
+      "sha256": "70d244d3f87eed12e21241b81e42f330230f77d144ffef828ea53e630c1e73df",
+      "published_at": "2026-10-21T15:06:51.811508+00:00"
     }
   },
   "config_path": "in/config/env/mimic.yaml",

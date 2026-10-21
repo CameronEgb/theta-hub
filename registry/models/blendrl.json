@@ -2,7 +2,7 @@
   "id": "blendrl",
   "name": "BlendRL Neural-Symbolic Policy",
   "kind": "model",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Modular actor-critic architecture combining neural networks and symbolic reasoners with adaptive blending.",
   "author": {
     "name": "NeSyRL Contributors",
@@ -25,6 +25,24 @@
       "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
       "sha256": "431620f2894ddeec4148db8ab037655cf9e2354a481b4f833445c96fd70e74ac",
       "published_at": "2026-10-18T19:00:00Z"
+    },
+    "1.0.1": {
+      "tag": "v1.0.1",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.1.zip",
+      "sha256": "0ae852c537cf0aa26314c22f50f20222ff68ae9505e6a99ee3335c516655827b",
+      "published_at": "2026-10-21T14:55:42.486620+00:00"
+    },
+    "1.0.2": {
+      "tag": "v1.0.2",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.2.zip",
+      "sha256": "1bd09aea32a764c1e2d5d49418321b3fb474a55573dae6ca7cb03a83151d5c41",
+      "published_at": "2026-10-21T15:06:51.815394+00:00"
+    },
+    "1.0.3": {
+      "tag": "v1.0.3",
+      "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.3.zip",
+      "sha256": "a974e83a1d01d7e368fca237f27c306fc946091b92b3e0a1f818451b88a335a3",
+      "published_at": "2026-10-21T15:07:44.190439+00:00"
     }
   },
   "config_path": "in/config/model/blendrl.yaml",
@@ -88,5 +106,12 @@
         "description": "Symbolic reasoning module."
       }
     }
+  },
+  "dependencies": {
+    "components": [
+      "dnn",
+      "nsfr",
+      "neumann"
+    ]
   }
 }

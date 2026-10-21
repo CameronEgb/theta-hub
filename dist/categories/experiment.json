@@ -1,13 +1,13 @@
 {
   "kind": "experiment",
-  "updated_at": "2026-10-20T23:05:21.140247+00:00",
+  "updated_at": "2026-10-21T18:10:14.967291+00:00",
   "count": 3,
   "components": [
     {
       "id": "mimic",
       "name": "MIMIC Clinical Sepsis Benchmark",
       "kind": "experiment",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Complete MIMIC-III sepsis experiment suite: offline clinical benchmark configs, group defaults, ICU environment hooks, timeseries data module, early prediction & reward shaping evaluators, and clinical agreement plotters.",
       "author": {
         "name": "Theta Research"
@@ -24,6 +24,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic-1.0.0.zip",
           "sha256": "c96ac16d722bbbbc4b216c6cda1d29506c658b18217d809589650950df169d61",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic-1.0.1.zip",
+          "sha256": "b383de75bd65fb02d59f9564ea7be02b6676408d7972bdf232055a95068a7839",
+          "published_at": "2026-10-21T15:09:32.923759+00:00"
         }
       },
       "target_path": "in/config/experiment/mimic",

@@ -1,7 +1,7 @@
 {
   "$schema": "https://hub.thetaide.org/schemas/component-v1.json",
   "version": "1.0",
-  "updated_at": "2026-10-21T18:24:52.188661+00:00",
+  "updated_at": "2026-10-21T18:23:56.392094+00:00",
   "count": 41,
   "components": [
     {
@@ -548,7 +548,7 @@
       "id": "doom-env",
       "name": "ViZDoom Environment",
       "kind": "env",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "ViZDoom visual reinforcement learning environment for Doom scenario benchmarks.",
       "author": {
         "name": "Cameron Egbert",
@@ -571,6 +571,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_env-1.0.0.zip",
           "sha256": "a9a6806ad89876a3a04f58c3f304ed1faa75c2c372dc844a33fe9233ad412fb6",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/doom_env-1.0.1.zip",
+          "sha256": "9294391f9b6d3bc2f901aa47b05c36048bf9782bb76eed3aaa2ec1ffbe4bf925",
+          "published_at": "2026-10-21T14:55:42.482302+00:00"
         }
       },
       "paradigms": [
@@ -631,8 +637,8 @@
       "id": "gym_classic_control",
       "name": "Gymnasium Classic Control",
       "kind": "env",
-      "version": "1.0.1",
-      "description": "Standard Gymnasium classic control environments: MountainCar, Pendulum, and Acrobot.",
+      "version": "1.0.2",
+      "description": "Standard Gymnasium classic control environments: CartPole, MountainCar, Pendulum, and Acrobot.",
       "author": {
         "name": "Theta-IDE Team"
       },
@@ -652,6 +658,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.1.zip",
           "sha256": "b705a00d4996d432f754654c46d3ab5cb8d3035dd4a2b8cb7d5786735f1d13eb",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.2": {
+          "tag": "v1.0.2",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/gym_classic_control-1.0.2.zip",
+          "sha256": "533494257db19db0aa87b2f9ab0c4ffe076b194c19ec59ad47fb8f03a60c7407",
+          "published_at": "2026-10-21T18:00:57.905213+00:00"
         }
       },
       "repository": "https://github.com/CameronEgb/theta-plugins",
@@ -659,8 +671,9 @@
       "paradigms": [
         "online_rl"
       ],
-      "config_path": "in/config/env/gym_classic_control/acrobot.yaml",
+      "config_path": "in/config/env/gym_classic_control/cartpole.yaml",
       "config_paths": [
+        "in/config/env/gym_classic_control/cartpole.yaml",
         "in/config/env/gym_classic_control/mountaincar.yaml",
         "in/config/env/gym_classic_control/pendulum.yaml",
         "in/config/env/gym_classic_control/acrobot.yaml"
@@ -764,6 +777,38 @@
                 }
               }
             }
+          },
+          "in/config/env/gym_classic_control/cartpole.yaml": {
+            "type": "object",
+            "properties": {
+              "monitor_metric": {
+                "type": "string"
+              },
+              "preprocess_on_load": {
+                "type": "boolean"
+              },
+              "env_id": {
+                "type": "string"
+              },
+              "num_envs": {
+                "type": "integer"
+              },
+              "num_steps": {
+                "type": "integer"
+              },
+              "gamma": {
+                "type": "number"
+              },
+              "gae_lambda": {
+                "type": "number"
+              },
+              "default_plots": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }
@@ -772,7 +817,7 @@
       "id": "mimic-env",
       "name": "MIMIC-III Clinical Environment Suite",
       "kind": "env",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "ICU sepsis benchmarks, valuation hooks, clinical rules, and transition interfaces for MIMIC-III.",
       "author": {
         "name": "Theta Clinical Team"
@@ -789,6 +834,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_env-1.0.0.zip",
           "sha256": "71f37fda725ab65f81346c7517ec3d8e7935e7d303dc4832d23af4239f808841",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_env-1.0.1.zip",
+          "sha256": "70d244d3f87eed12e21241b81e42f330230f77d144ffef828ea53e630c1e73df",
+          "published_at": "2026-10-21T15:06:51.811508+00:00"
         }
       },
       "config_path": "in/config/env/mimic.yaml",
@@ -1294,7 +1345,7 @@
       "id": "mimic-early-prediction",
       "name": "MIMIC Early Prediction Evaluator",
       "kind": "evaluator",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Septic shock early prediction evaluator, AUPRC scoring, counterfactual analysis, and agreement metrics.",
       "author": {
         "name": "Theta Clinical Team"
@@ -1311,6 +1362,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_early_prediction-1.0.0.zip",
           "sha256": "5a3e8c4b0937268353c79f170e7cf3f78568e2229abdbfe58e7745e84bbbb77a",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic_early_prediction-1.0.1.zip",
+          "sha256": "8e655f24529b584c4fab919d3b7f408d67d1967b1bcb79a65b34fb9dc3d17c4f",
+          "published_at": "2026-10-21T15:06:51.819788+00:00"
         }
       },
       "config_path": "in/config/eval/mimic/early_prediction.yaml",
@@ -1460,7 +1517,7 @@
       "id": "mimic",
       "name": "MIMIC Clinical Sepsis Benchmark",
       "kind": "experiment",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "Complete MIMIC-III sepsis experiment suite: offline clinical benchmark configs, group defaults, ICU environment hooks, timeseries data module, early prediction & reward shaping evaluators, and clinical agreement plotters.",
       "author": {
         "name": "Theta Research"
@@ -1477,6 +1534,12 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic-1.0.0.zip",
           "sha256": "c96ac16d722bbbbc4b216c6cda1d29506c658b18217d809589650950df169d61",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/mimic-1.0.1.zip",
+          "sha256": "b383de75bd65fb02d59f9564ea7be02b6676408d7972bdf232055a95068a7839",
+          "published_at": "2026-10-21T15:09:32.923759+00:00"
         }
       },
       "target_path": "in/config/experiment/mimic",
@@ -2036,7 +2099,7 @@
       "id": "blendrl",
       "name": "BlendRL Neural-Symbolic Policy",
       "kind": "model",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "description": "Modular actor-critic architecture combining neural networks and symbolic reasoners with adaptive blending.",
       "author": {
         "name": "NeSyRL Contributors",
@@ -2059,6 +2122,24 @@
           "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.0.zip",
           "sha256": "431620f2894ddeec4148db8ab037655cf9e2354a481b4f833445c96fd70e74ac",
           "published_at": "2026-10-18T19:00:00Z"
+        },
+        "1.0.1": {
+          "tag": "v1.0.1",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.1.zip",
+          "sha256": "0ae852c537cf0aa26314c22f50f20222ff68ae9505e6a99ee3335c516655827b",
+          "published_at": "2026-10-21T14:55:42.486620+00:00"
+        },
+        "1.0.2": {
+          "tag": "v1.0.2",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.2.zip",
+          "sha256": "1bd09aea32a764c1e2d5d49418321b3fb474a55573dae6ca7cb03a83151d5c41",
+          "published_at": "2026-10-21T15:06:51.815394+00:00"
+        },
+        "1.0.3": {
+          "tag": "v1.0.3",
+          "url": "https://raw.githubusercontent.com/CameronEgb/theta-hub/main/packages/blendrl-1.0.3.zip",
+          "sha256": "a974e83a1d01d7e368fca237f27c306fc946091b92b3e0a1f818451b88a335a3",
+          "published_at": "2026-10-21T15:07:44.190439+00:00"
         }
       },
       "config_path": "in/config/model/blendrl.yaml",
@@ -2122,6 +2203,13 @@
             "description": "Symbolic reasoning module."
           }
         }
+      },
+      "dependencies": {
+        "components": [
+          "dnn",
+          "nsfr",
+          "neumann"
+        ]
       }
     },
     {
